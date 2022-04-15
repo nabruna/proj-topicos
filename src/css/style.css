@@ -1,0 +1,20 @@
+:root {
+    --aluno-light: #a9def9;
+    --aluno-dark: #0d84bf;
+    --prof-light: #f4bb90;
+    --prof-dark: #CC6414;
+    --pais-light: #BDEFD1;
+    --pais-dark: #28A45A;
+    --func-light: #ebdead;
+    --func-dark: #CBAD40;
+    --gen-light: #FF99B8;
+    --gen-dark: #B80037;
+}
+
+.nav-aluno {
+    background-color: var(--aluno-light);
+}
+
+.nav-prof {
+    background-color: var(--prof-light);
+}
