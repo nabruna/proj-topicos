@@ -1,0 +1,23 @@
+{
+  "name": "proj-topicos",
+  "version": "1.0.0",
+  "description": "Repositório para o projeto da matéria de Tópicos Especiais.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanellide/proj-topicos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nanellide/proj-topicos/issues"
+  },
+  "homepage": "https://github.com/nanellide/proj-topicos#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
