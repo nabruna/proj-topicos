@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 :root {
+    --font-sserif: Rubik;
     --aluno-light: #a9def9;
     --aluno-dark: #0d84bf;
     --prof-light: #f4bb90;
@@ -9,6 +12,10 @@
     --func-dark: #CBAD40;
     --gen-light: #FF99B8;
     --gen-dark: #B80037;
+}
+
+body {
+    font-family: var(--font-sserif);
 }
 
 .nav-aluno {
@@ -149,3 +156,24 @@ p{
   
     border-radius: 15px;
   }
+.nav-pais {
+    background-color: var(--pais-light);
+}
+
+.nav-func {
+    background-color: var(--func-light);
+}
+
+.side-nav {
+    height: 100vh;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.nav-title {
+    display: flex;
+    flex-basis: auto;
+}
