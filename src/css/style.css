@@ -28,7 +28,7 @@ body {
 }
 
 body{
-    background: url(../img/fundo-linhas.png), url(../img/fundo-textura.png);
+    background: url(../css/img/fundo-linhas.png), url(../css/img/fundo-textura.png);
     background-position: center;
 }
 
@@ -178,10 +178,10 @@ body{
 }
 
 .input-email{
-  background-image: url(../../src/img/mail.svg);
+  background-image: url(../css/img/mail.svg);
 }
 .input-pass{
-  background-image: url(../img/password.svg);
+  background-image: url(../css/img/password.svg);
 }
 .chamada-img{
   position: center;
@@ -220,7 +220,12 @@ body{
   width: 100%;
   height: 50px;
   margin: 40px;
+  text-align: center;
   box-shadow: 1px 1px 5px 1px var(--black);
   border-radius: 15px;
 
+   a{
+    width: 100%;
+    height: 50px;
+  }
 }
