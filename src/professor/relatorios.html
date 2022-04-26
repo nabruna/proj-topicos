@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> 
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -34,13 +35,13 @@
                         <a class="nav-link" href="relatorios.html">Relatórios</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="alunos.html">Alunos</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="registrar.html">Registrar</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="materiais.html">Materiais</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pendencias.html">Pendências</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="frequencia.html">Frequência</a>
@@ -58,15 +59,181 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 side-nav" style="background-color: #FBE9DA;">
-              <h2>Relatórios</h2>
-              <ul>
-                  <li>coisa</li>
-                  <li>coisa</li>
-              </ul>
+            <div class="col-lg-2 side-nav prof-bg">
+                <h2>Disciplinas</h2>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action prof-active" aria-current="true">
+                        Matemática
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Matemática avançada</a>
+                </div>
             </div>
             <div class="col">
-              Column
+                <h2>Relatórios</h2>
+                <div class="w-100 text-center">
+                    <div class="btn-group mb-5" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-outline-primary active">Segunda</button>
+                        <button type="button" class="btn btn-outline-primary">Terça</button>
+                        <button type="button" class="btn btn-outline-primary">Quarta</button>
+                        <button type="button" class="btn btn-outline-primary">Quinta</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mb-2">
+                            <h3 class="ps-2">Alunos</h3>
+                            <hr>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                        Alice Ventura
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Anita Rocha
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Gustavo Oliveira
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Diana Armando
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Leonel Santos
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Luísa Pinto
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Maya Pinheiro
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Manuela Nunes
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Marcelo Madeira
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Pedro Soares
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Santiago Franco
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Victor Esteves
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="text-end">
+                            <a href="#" class="link-primary">Limpar todos</a>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <h3>Presenças</h3>
+                        <hr>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Aluno</th>
+                                    <th scope="col">Datas das faltas</th>
+                                    <th scope="col">Qtd</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Alice Ventura</th>
+                                    <td>05/03</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">Total</th>
+                                    <td></td>
+                                    <td>1</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <div class="col-4">
+                        <h3>Notas</h3>
+                        <hr>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Aluno</th>
+                                    <th scope="col">N1</th>
+                                    <th scope="col">N2</th>
+                                    <th scope="col">N3</th>
+                                    <th scope="col">N4</th>
+                                    <th scope="col">Média</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Alice Ventura</th>
+                                    <td>7.3</td>
+                                    <td>8.2</td>
+                                    <td>n/a</td>
+                                    <td>n/a</td>
+                                    <td>7.7</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">Média geral</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>7.7</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+
+
+
             </div>
         </div>
     </div>
