@@ -4,6 +4,7 @@
     --font-sserif: Rubik;
     --aluno-light: #a9def9;
     --aluno-dark: #0d84bf;
+    --prof-baby: #FBE9DA;
     --prof-light: #f4bb90;
     --prof-dark: #CC6414;
     --pais-light: #BDEFD1;
@@ -12,6 +13,7 @@
     --func-dark: #CBAD40;
     --gen-light: #FF99B8;
     --gen-dark: #B80037;
+    --white: #e9e9e9;
     --black: #000000;
 }
 
@@ -19,6 +21,7 @@ body {
     font-family: var(--font-sserif);
 }
 
+<<<<<<< HEAD
 .nav-aluno {
     background-color: var(--aluno-light);
 }
@@ -29,14 +32,18 @@ body {
 
 body{
     background: url(../css/img/fundo-linhas.png), url(../css/img/fundo-textura.png);
+=======
+/* body{
+    background: url(../img/fundo-linhas.png), url(../img/fundo-textura.png);
+>>>>>>> 6ea672c39e9f9ef783695a27e3aaccd87d561f52
     background-position: center;
-}
+} */
 
 /*-------------- HOME----------------->*/
 .titulos-h1 {
     display: flex;
     font-size: 40px;
-    color: #000000;
+    color: var(--black);
     text-align: center;
   }
 
@@ -47,7 +54,7 @@ body{
     justify-content: space-between;
     width: 100%;  
     font-size: 19px;
-    color: #000000;
+    color: var(--black);
   }
 
 .div-perfies {
@@ -119,7 +126,7 @@ body{
     height: 200px;
     background: #ddd8d8;
     box-shadow: 1px 1px 5px 1px;
-    border-color: #000000;
+    border-color: var(--black);
     border-radius: 15px;
     align-items: center;
     gap: 30px;
@@ -138,27 +145,7 @@ body{
     backdrop-filter: blur(200px);
     border-radius: 15px;
   }
-.nav-pais {
-    background-color: var(--pais-light);
-}
 
-.nav-func {
-    background-color: var(--func-light);
-}
-
-.side-nav {
-    height: 100vh;
-}
-
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-
-.nav-title {
-    display: flex;
-    flex-basis: auto;
-}
 
 /*-----login's----------*/
 
@@ -228,4 +215,56 @@ body{
     width: 100%;
     height: 50px;
   }
+}
+
+/* Navegação */
+
+.nav-pais {
+  background-color: var(--pais-light);
+}
+
+.nav-func {
+  background-color: var(--func-light);
+}
+
+.nav-prof {
+  background-color: var(--prof-light);
+}
+
+.nav-aluno {
+  background-color: var(--aluno-light);
+}
+
+.side-nav {
+  min-height: 100vh;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.nav-title {
+  display: flex;
+  flex-basis: auto;
+}
+
+/* Area do professor */
+
+.prof-bg {
+  background-color: var(--prof-baby);
+}
+
+.prof-active, .prof-active:hover {
+  background-color: var(--prof-dark);
+  color: var(--white);
+  z-index: 3;
+}
+
+/* Area do aluno */
+
+/* Gerais */
+
+span > .material-icons {
+  cursor: pointer;
 }

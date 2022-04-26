@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aaaaaaa</title>
+    <title>E-scola</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> 
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -31,19 +32,22 @@
                         <a class="nav-link active" aria-current="page" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="calendario.html">Calendário</a>
+                        <a class="nav-link" href="relatorios.html">Relatórios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="disciplinas.html">Disciplinas</a>
+                        <a class="nav-link" href="alunos.html">Alunos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="agenda.html">Agenda de provas</a>
+                        <a class="nav-link" href="#">Registrar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="atividades.html">Atividades extras</a>
+                        <a class="nav-link" href="materiais.html">Materiais</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="chat.html">Chat com professores</a>
+                        <a class="nav-link" href="frequencia.html">Frequência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notas.html">Notas</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
@@ -55,15 +59,17 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 side-nav" style="background-color: #FBE9DA;">
-              <h2>Calendário</h2>
-              <ul>
-                  <li>coisa</li>
-                  <li>coisa</li>
-              </ul>
+            <div class="col-lg-2 side-nav prof-bg">
+                <h2>Registrar</h2>
+                <div class="list-group">
+                    <a href="./registrar/aulas.html" class="list-group-item list-group-item-action"
+                        aria-current="true">Aulas</a>
+                    <a href="./registrar/provas.html" class="list-group-item list-group-item-action">Provas</a>
+                    <a href="./registrar/atividades-extras.html"
+                        class="list-group-item list-group-item-action">Atvilidades extras</a>
+                </div>
             </div>
             <div class="col">
-              Column
             </div>
         </div>
     </div>

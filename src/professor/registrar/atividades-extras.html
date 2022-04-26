@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-scola</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-prof">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="align-middle">
+                    <span class="material-icons md-36">
+                        auto_stories
+                    </span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../relatorios.html">Relatórios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../alunos.html">Alunos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../materiais.html">Materiais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../frequencia.html">Frequência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../notas.html">Notas</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <button class="btn btn-danger">Logout</button>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 side-nav prof-bg">
+                <h2>Registrar</h2>
+                <div class="list-group">
+                    <a href="./aulas.html" class="list-group-item list-group-item-action" aria-current="true">Aulas</a>
+                    <a href="./provas.html" class="list-group-item list-group-item-action">Provas</a>
+                    <a href="#" class="list-group-item list-group-item-action prof-active">Atvilidades
+                        extras</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <h2>Registrar atividades extras</h2>
+                    <div class="w-100">
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">Nome da atividade</span>
+                                    <input type="text" class="form-control" placeholder="Fotografia">
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group mb-3">
+                                    <label class="input-group-text" for="inputGroupSelect01">Dia da semana</label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option value="seg">Segunda</option>
+                                        <option value="ter">Terça</option>
+                                        <option value="qua">Quarta</option>
+                                        <option value="qui">Quinta</option>
+                                        <option value="sex">Sexta</option>
+                                        <option value="sex">Sábado</option>
+                                        <option value="sex">Domingo</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <p class="text-start">
+                                    <button class="btn btn-outline-success">Registrar</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <h2>Atividades extras registradas</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Atividade</th>
+                                <th scope="col">Dia</th>
+                                <th scope="col">Alunos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Clube das Olimpíadas de Matemática</th>
+                                <td>Segunda</td>
+                                <td>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Joaquim Lima</li>
+                                        <li class="list-group-item">Arlindo Abrantes</li>
+                                        <li class="list-group-item">Filipe Mestre</li>
+                                        <li class="list-group-item">Anibal Pinto</li>
+                                        <li class="list-group-item">Antônia Madureira</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
