@@ -21,21 +21,8 @@ body {
     font-family: var(--font-sserif);
 }
 
-<<<<<<< HEAD
-.nav-aluno {
-    background-color: var(--aluno-light);
-}
-
-.nav-prof {
-    background-color: var(--prof-light);
-}
-
-body{
-    background: url(../css/img/fundo-linhas.png), url(../css/img/fundo-textura.png);
-=======
 /* body{
     background: url(../img/fundo-linhas.png), url(../img/fundo-textura.png);
->>>>>>> 6ea672c39e9f9ef783695a27e3aaccd87d561f52
     background-position: center;
 } */
 
