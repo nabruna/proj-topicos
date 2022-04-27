@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professor - login</title>
-
-    <link rel="stylesheet" href="./../css/style.css">
+    <title>E-scola | Login professor</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
-<body>
-    <section class="inicio">
-        <img src="../css/img/professor.png" class="chamada-img">
-        <h1 class="titulos-h1"> Bem vindo Professor </h1>
-        <p> Faça login para acessar seu perfil </p>
 
-    <form action="#" class="chamada-form">
-        <input type="text" class="input input-icone input-email" placeholder="Ensira seu e-mail" aria-label="ensira seu e-mail">
-        <input  class="input input-icone input-pass" placeholder="Ensira sua senha" aria-label="ensira sua senha">
-        <button class="button-prof">Entrar</button></form>
+<body class="container text-center">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="Professor">Professor</li>
+        </ol>
+    </nav>
+
+    <h1 class="mt-5 fw-bold">Login</h1>
+    <p class="text-muted mt-2 mb-5">Faça login para acessar o portal do professor</p>
+
+    <section class="d-flex justify-content-center py-5">
+        <div class="card p-3" style="max-width: 50rem;">
+            <p><img src="../css/img/professor.png" class="py-3" style="max-width: 3rem;"></p>
+
+            <form action="./relatorios.html" class="mx-3">
+                <div class="row mb-3 mx-3">
+                    <label for="emailProf" class="text-start form-label fw-bold">Email:</label>
+                    <input type="email" class="form-control" id="emailProf" placeholder="email@e-scola.com"
+                        aria-label="insira seu e-mail">
+                </div>
+
+                <div class="row mb-3 mx-3">
+                    <label for="senhaProf" class="text-start form-label fw-bold">Senha:</label>
+                    <input type="password" class="form-control" id="senhaProf" placeholder="**********"
+                        aria-label="insira sua senha">
+                </div>
+
+                <button type="submit" class="btn btn-outline-success my-4">Entrar</button>
+            </form>
+        </div>
     </section>
 </body>
+
 </html>

@@ -19,6 +19,33 @@
 
 body {
     font-family: var(--font-sserif);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+footer {
+  position: fixed; /* Here's what sticks it */
+  bottom: 0; /* to the bottom of the window */
+  left: 0; /* and to the left of the window. */
+  padding: 1rem 3rem 1rem;
+  width: 100%;
+  background-color: var(--gen-light);
+  color: var(--gen-dark);
+}
+
+.btn-outline-orange {
+  color: #f57b29;
+  border-color: #f57b29;
+}
+
+.btn-outline-orange:hover, .btn-outline-orange:active {
+  color: #fff;
+  background-color: #f57b29;
+  border-color: #f57b29;
+}
+
+.btn-outline-orange:focus, .btn-outline-orange:active:focus {
+  box-shadow: 0 0 0 0.25rem rgba(253, 121, 13, 0.5);
 }
 
 /* body{
@@ -120,8 +147,6 @@ body {
     justify-content: center;
   }
 
-
-  /*------CONTATO-------*/  
   .links-contatos {
     display: flex;
     justify-content: space-around;
@@ -133,8 +158,6 @@ body {
     border-radius: 15px;
   }
 
-
-/*-----login's----------*/
 
 .input{
   color: inherit;
@@ -198,11 +221,11 @@ body {
   box-shadow: 1px 1px 5px 1px var(--black);
   border-radius: 15px;
 
-   a{
+   /* a{
     width: 100%;
-    height: 50px;
-  }
+    height: 50px; */
 }
+
 
 /* Navegação */
 
