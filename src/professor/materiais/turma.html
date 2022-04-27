@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-scola</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-prof">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="align-middle">
+                    <span class="material-icons md-36">
+                        auto_stories
+                    </span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../relatorios.html">Relatórios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../alunos.html">Alunos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../registrar.html">Registrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Materiais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../frequencia.html">Frequência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../notas.html">Notas</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <button class="btn btn-danger">Logout</button>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 side-nav prof-bg">
+                <h2>Materiais</h2>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action prof-active"
+                        aria-current="true">Para turma</a>
+                    <a href="./aluno.html" class="list-group-item list-group-item-action"
+                        aria-current="true">Para aluno</a>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Registrar materiais para a turma</h2>
+                
+                <div class="row my-3">
+                    <div class="input-group col">
+                        <label class="input-group-text" for="selecionarMateria">Matéria</label>
+                        <select class="form-select" id="selecionarMateria">
+                          <option value="1">Matemática</option>
+                          <option value="2">Matemática avançada</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group col">
+                        <label class="input-group-text" for="selecionarDia">Dia</label>
+                        <select class="form-select" id="selecionarDia">
+                          <option value="1">Segunda</option>
+                          <option value="2">Terça</option>
+                          <option value="2">Quarta</option>
+                          <option value="2">Quinta</option>
+                        </select>
+                    </div>
+
+                    <div class="col-auto">
+                        <button class="btn btn-outline-primary">Aplicar</button>
+                    </div>
+                </div>
+                
+                <div class="card p-4 my-3 ms-1">
+                    <label for="selecionarArquivos" class="h4 text-center my-5 form-label">Selecionar arquivos</label>
+                    <input class="form-control" type="file" id="selecionarArquivos" multiple />
+                    <div class="row">
+                        <div class="text-end">
+                            <a href="#" class="link-primary">Limpar</a>
+                        </div>
+                    </div>
+                    <div class="row my-3 mx-auto">
+                        <button class="btn btn-outline-success">Fazer upload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

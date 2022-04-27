@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-scola</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
@@ -32,22 +32,22 @@
                         <a class="nav-link active" aria-current="page" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="relatorios.html">Relatórios</a>
+                        <a class="nav-link" href="../relatorios.html">Relatórios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="alunos.html">Alunos</a>
+                        <a class="nav-link" href="../alunos.html">Alunos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Registrar</a>
+                        <a class="nav-link" href="../registrar.html">Registrar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="materiais.html">Materiais</a>
+                        <a class="nav-link" href="#">Materiais</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="frequencia.html">Frequência</a>
+                        <a class="nav-link" href="../frequencia.html">Frequência</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="notas.html">Notas</a>
+                        <a class="nav-link" href="../notas.html">Notas</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
@@ -60,16 +60,42 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2 side-nav prof-bg">
-                <h2>Registrar</h2>
+                <h2>Materiais</h2>
                 <div class="list-group">
-                    <a href="./registrar/aulas.html" class="list-group-item list-group-item-action"
-                        aria-current="true">Aulas</a>
-                    <a href="./registrar/provas.html" class="list-group-item list-group-item-action">Provas</a>
-                    <a href="./registrar/atividades-extras.html"
-                        class="list-group-item list-group-item-action">Atividades extras</a>
+                    <a href="./turma.html" class="list-group-item list-group-item-action"
+                        aria-current="true">Para turma</a>
+                    <a href="#" class="list-group-item list-group-item-action prof-active"
+                        aria-current="true">Para aluno</a>
                 </div>
             </div>
             <div class="col">
+                <h2>Registrar materiais para alunos específicos</h2>
+                
+                <div class="row my-3">
+                    <div class="input-group col">
+                        <label class="input-group-text" for="selecionarMateria">Selecionar aluno</label>
+                        <select class="form-select" id="selecionarMateria">
+                          <option value="1">Leonardo Vieira</option>
+                          <option value="2">Diego Mantovani</option>
+                        </select>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-outline-primary">Aplicar</button>
+                    </div>
+                </div>
+                
+                <div class="card p-4 my-3 ms-1">
+                    <label for="selecionarArquivos" class="h4 text-center my-5 form-label">Selecionar arquivos</label>
+                    <input class="form-control" type="file" id="selecionarArquivos" multiple />
+                    <div class="row">
+                        <div class="text-end">
+                            <a href="#" class="link-primary">Limpar</a>
+                        </div>
+                    </div>
+                    <div class="row my-3 mx-auto">
+                        <button class="btn btn-outline-success">Fazer upload</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

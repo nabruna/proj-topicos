@@ -70,13 +70,19 @@
             </div>
             <div class="col">
                 <h2>Relatórios</h2>
-                <div class="w-100 text-center">
-                    <div class="btn-group mb-5" role="group" aria-label="First group">
-                        <button type="button" class="btn btn-outline-primary active">Segunda</button>
-                        <button type="button" class="btn btn-outline-primary">Terça</button>
-                        <button type="button" class="btn btn-outline-primary">Quarta</button>
-                        <button type="button" class="btn btn-outline-primary">Quinta</button>
+                <div class="row mx-auto w-50 my-4">
+                    <div class="input-group col">
+                        <label class="input-group-text" for="selecionarDia">Dia</label>
+                        <select class="form-select" id="selecionarDia">
+                          <option value="1">Segunda</option>
+                          <option value="2">Terça</option>
+                          <option value="2">Quarta</option>
+                          <option value="2">Quinta</option>
+                        </select>
                     </div>
+                    <span class="col-auto">
+                        <button class="btn btn-outline-primary">Aplicar</button>
+                    </span>
                 </div>
 
                 <div class="row">
