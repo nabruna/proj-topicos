@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Provas</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-aluno">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="align-middle">
+                    <span class="material-icons md-36">
+                        auto_stories
+                    </span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <div class="navT">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calendario.html">Calendário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="materiais.html">Materiais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="agenda.html">Agenda de provas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="atividades.html">Atividades extras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chat.html">Chat com professores</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <span class="navbar-text">
+                <button class="btn btn-danger" onclick="window.location.href='../index.html'">Logout</button>
+            </span>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 side-nav aluno-bg">
+                <h2>Provas</h2>
+                <table class="table table-hover table-bordered border-primary">
+                    <tr>
+                        <th>Data</th>
+                        <th>Matéria</th>
+                    </tr>
+                    <tr>
+                        <td>07/04</td>
+                        <td>Matemática Financeira</td>
+                    </tr>
+                    <tr>
+                        <td>10/04</td>
+                        <td>História do Brasil</td>
+                    </tr>
+                    <tr>
+                        <td>11/06</td>
+                        <td>Biologia Celular</td>
+                    </tr>
+                    <tr>
+                        <td>15/07</td>
+                        <td>Planícies e Planaltos</td>
+                    </tr>
+                    <tr>
+                        <td>05/08</td>
+                        <td>Reavaliação História</td>
+                    </tr>
+                    <tr>
+                        <td>06/08</td>
+                        <td>Reavaliação Matemática</td>
+                    </tr>
+                    <tr>
+                        <td>07/08</td>
+                        <td>Reavaliação Biologia</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <div class="alert alert-warning mt-3 d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                      <div>
+                        Não haverá consulta. Colas não serão toleradas!
+                      </div>
+                </div>
+
+
+                <table class="table">
+                    <tr>
+                        <td><b>Matéria</b></td>
+                        <td><b>Conteúdos</b></td>
+                    </tr>
+
+                    <tr>
+                        <td>Matemática Financeira</td>
+                        <td>Conteúdo A, B</td>
+                    </tr>
+
+                    <tr>
+                        <td>História do Brasil</td>
+                        <td>Conteúdo B, C, D</td>
+                    </tr>
+
+                    <tr>
+                        <td>Biologia Celular</td>
+                        <td>Conteúdo A, B, D</td>
+                    </tr>
+
+                    <tr>
+                        <td>Planícies e Planaltos</td>
+                        <td>Conteúdo A, B, D, E</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Reavaliação História</b></td>
+                        <td>Todos os conteúdos do semestre</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Reavaliação Matemática</b></td>
+                        <td>Todos os conteúdos do semestre</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Reavaliação Biologia</b></td>
+                        <td>Todos os conteúdos do semestre</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <br>
+                <h1>Boas Provas! 😊</h1>
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

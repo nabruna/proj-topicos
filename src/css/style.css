@@ -2,6 +2,7 @@
 
 :root {
     --font-sserif: Rubik;
+    --aluno-baby: #ECF8FD;
     --aluno-light: #a9def9;
     --aluno-dark: #0d84bf;
     --prof-baby: #FBE9DA;
@@ -9,6 +10,7 @@
     --prof-dark: #CC6414;
     --pais-light: #BDEFD1;
     --pais-dark: #28A45A;
+    --func-baby: #F7F1DE;
     --func-light: #ebdead;
     --func-dark: #CBAD40;
     --gen-light: #FF99B8;
@@ -245,10 +247,6 @@ footer {
   background-color: var(--aluno-light);
 }
 
-.side-nav {
-  min-height: 100vh;
-}
-
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
@@ -271,10 +269,38 @@ footer {
   z-index: 3;
 }
 
+/* Área do funcionário */
+
+.func-bg {
+  background-color: var(--func-baby);
+}
+
+.func-active, .func-active:hover {
+  background-color: var(--func-dark);
+  color: var(--white);
+  z-index: 3;
+}
+
 /* Area do aluno */
+
+.aluno-bg {
+  background-color: var(--aluno-baby);
+}
+
+.aluno-active, .aluno-active:hover {
+  background-color: var(--aluno-dark);
+  color: var(--white);
+  z-index: 3;
+}
 
 /* Gerais */
 
 span > .material-icons {
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .side-nav {
+    min-height: 100vh;
+  }
 }

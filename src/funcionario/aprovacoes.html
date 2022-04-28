@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-scola | Professor | Relatórios</title>
+    <title>E-scola</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light nav-prof">
+    <nav class="navbar navbar-expand-lg navbar-light nav-func">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <span class="align-middle">
@@ -32,22 +31,19 @@
                         <a class="nav-link active" aria-current="page" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="relatorios.html">Relatórios</a>
+                        <a class="nav-link" href="inicio.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="alunos.html">Alunos</a>
+                        <a class="nav-link" href="relatorios.html">Relatorios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registrar.html">Registrar</a>
+                        <a class="nav-link" href="aprovacoes.html">Aprovações</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="materiais.html">Materiais</a>
+                        <a class="nav-link" href="financeiro.html">Parte Financeira</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="frequencia.html">Frequência</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="notas.html">Notas</a>
+                        <a class="nav-link" href="chat.html">Chat</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
@@ -59,32 +55,15 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 side-nav prof-bg">
-                <h2>Disciplinas</h2>
+            <div class="col-lg-2 side-nav func-bg">
+                <h2>Aprovações</h2>
+
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action prof-active" aria-current="true">
-                        Matemática
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">Matemática avançada</a>
-                </div>
-            </div>
-            <div class="col">
-                <h2>Relatórios</h2>
-                <div class="row mx-auto w-50 my-4">
-                    <div class="input-group col">
-                        <label class="input-group-text" for="selecionarDia">Dia</label>
-                        <select class="form-select" id="selecionarDia">
-                            <option value="1">Segunda</option>
-                            <option value="2">Terça</option>
-                            <option value="2">Quarta</option>
-                            <option value="2">Quinta</option>
-                        </select>
-                    </div>
-                    <span class="col-auto">
-                        <button class="btn btn-outline-primary">Aplicar</button>
-                    </span>
+                    <a href="#" class="list-group-item list-group-item-action func-active" aria-current="true">Alunos</a>
                 </div>
 
+            </div>
+            <div class="col">
                 <div class="row">
                     <div class="col-4">
                         <div class="mb-2">
@@ -93,73 +72,73 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                        <input class="form-check-input me-1" type="radio" value="1" checked>
                                         Alice Ventura
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        <input class="form-check-input me-1" type="radio" value="2">
                                         Anita Rocha
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        <input class="form-check-input me-1" type="radio" value="3">
                                         Gustavo Oliveira
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        <input class="form-check-input me-1" type="radio" value="4">
                                         Diana Armando
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        <input class="form-check-input me-1" type="radio" value="5">
                                         Leonel Santos
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        <input class="form-check-input me-1" type="radio" value="6">
                                         Luísa Pinto
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        <input class="form-check-input me-1" type="radio" value="7">
                                         Maya Pinheiro
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        <input class="form-check-input me-1" type="radio" value="8">
                                         Manuela Nunes
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        <input class="form-check-input me-1" type="radio" value="9">
                                         Marcelo Madeira
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        <input class="form-check-input me-1" type="radio" value="10">
                                         Pedro Soares
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        <input class="form-check-input me-1" type="radio" value="11">
                                         Santiago Franco
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="form-check">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        <input class="form-check-input me-1" type="radio" value="12">
                                         Victor Esteves
                                     </div>
                                 </li>
@@ -171,22 +150,88 @@
                         </div>
                     </div>
 
-                    <div class="col-4">
-                        <h3>Presenças</h3>
+                    <div class="col">
+                        <h3>Aprovações</h3>
                         <hr>
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th scope="col">Aluno</th>
-                                    <th scope="col">Datas das faltas</th>
-                                    <th scope="col">Qtd</th>
+                                    <th scope="col">Datas de Aprovação</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Ano letivo</th>
+                                    <th scope="col">Matrícula</th>
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">Alice Ventura</th>
-                                    <td>05/03</td>
-                                    <td>1</td>
+                                    <td>17/03</td>
+                                    <td>Aprovada</td>
+                                    <td>1° semestre</td>
+                                    <td>50620</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Português</th>
+                                    <td>17/03</td>
+                                    <td>Aprovada</td>
+                                    <td>1° semestre</td>
+                                    <td>50620</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Matemática</th>
+                                    <td>17/03</td>
+                                    <td>Aprovada</td>
+                                    <td>1°semestre</td>
+                                    <td>50620</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">História</th>
+                                    <td>17/03</td>
+                                    <td>Aprovada</td>
+                                    <td>1° semestre</td>
+                                    <td>50620</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Geografia</th>
+                                    <td>17/03</td>
+                                    <td>Aprovada</td>
+                                    <td>1° semestre</td>
+                                    <td>50620</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">Total</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>5</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-5">
+                        <h3>Atividades Extras</h3>
+                        <hr>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Aluno</th>
+                                    <th scope="col">Atividades Extras</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Alice Ventura</th>
+                                    <td>Música</td>
+                                    <td>Cursando</td>
+
                                 </tr>
                             </tbody>
                             <tfoot>
@@ -194,52 +239,23 @@
                                     <th scope="row">Total</th>
                                     <td></td>
                                     <td>1</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
 
-                    <div class="col-4">
-                        <h3>Notas</h3>
-                        <hr>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Aluno</th>
-                                    <th scope="col">N1</th>
-                                    <th scope="col">N2</th>
-                                    <th scope="col">N3</th>
-                                    <th scope="col">N4</th>
-                                    <th scope="col">Média</th>
                                 </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Alice Ventura</th>
-                                    <td>7.3</td>
-                                    <td>8.2</td>
-                                    <td>n/a</td>
-                                    <td>n/a</td>
-                                    <td>7.7</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th scope="row">Média geral</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>7.7</td>
-                                </tr>
+
                             </tfoot>
                         </table>
+
+                        
+                        <div class="row">
+                            <div class="col-auto">
+                                <button class="btn btn-outline-success">Aprovar</button>
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-outline-danger">Reprovar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>
