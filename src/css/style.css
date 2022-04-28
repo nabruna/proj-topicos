@@ -133,6 +133,7 @@ span > .material-icons {
   .side-nav {
     min-height: 100vh;
   }
+}
 /*-------PAIS-------*/
 .pais-active, .pais-active:hover {
   background-color: var(--pais-dark);
