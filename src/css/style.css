@@ -11,6 +11,7 @@
     --pais-light: #BDEFD1;
     --pais-dark: #28A45A;
     --func-baby: #F7F1DE;
+    --pais-baby: #a3ccb4;
     --func-light: #ebdead;
     --func-dark: #CBAD40;
     --gen-light: #FF99B8;
@@ -56,177 +57,6 @@ footer {
 } */
 
 /*-------------- HOME----------------->*/
-.titulos-h1 {
-    display: flex;
-    font-size: 40px;
-    color: var(--black);
-    text-align: center;
-  }
-
-.inicio {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;  
-    font-size: 19px;
-    color: var(--black);
-  }
-
-.div-perfies {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 80%;
-    gap: 15px;
-  }
-
-.div-acesso {
-    display: flex;
-    width: 33%;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .div-inicial-pais {
-    display: flex;
-    width: 100%;
-    height: 50px;
-  
-    background: var(--pais-light);
-    box-shadow: 1px 1px 5px 1px var(--black);
-    border-radius: 15px;
-    align-items: center;
-    justify-content: center;
-  } 
-
-  .div-inicial-aluno {
-    display: flex;
-    width: 100%;
-    height: 50px;
-  
-    background: var(--aluno-light);
-    box-shadow: 1px 1px 5px 1px var(--black);
-    border-radius: 15px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .div-inicial-prof {
-    display: flex;
-    width: 100%;
-    height: 50px;
-  
-    background: var(--prof-light);
-    box-shadow: 1px 1px 5px 1px var(--black);
-    border-radius: 15px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .div-inicial-func {
-    display: flex;
-    width: 100%;
-    height: 50px;
-  
-    background: var(--func-light);
-    box-shadow: 1px 1px 5px 1px var(--black);
-    border-radius: 15px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .div-img {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    background: #ddd8d8;
-    box-shadow: 1px 1px 5px 1px;
-    border-color: var(--black);
-    border-radius: 15px;
-    align-items: center;
-    gap: 30px;
-    justify-content: center;
-  }
-
-  .links-contatos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 40px;
-    padding: 50px;
-    box-shadow: 1px 1px 5px 1px var(--black);
-    backdrop-filter: blur(200px);
-    border-radius: 15px;
-  }
-
-
-.input{
-  color: inherit;
-  width: 100%;
-  height: 50px;
-  box-shadow: 1px 1px 5px 1px var(--black);
-  border-radius: 15px;
-  
-}
-
-.input-icone{
-  padding-left: 4.25rem;
-  background-repeat: no-repeat;
-  background-position: left 1.75rem center;
-}
-
-.input-email{
-  background-image: url(../css/img/mail.svg);
-}
-.input-pass{
-  background-image: url(../css/img/password.svg);
-}
-.chamada-img{
-  position: center;
-  position: relative;
-  top: 100%; 
-
-}
-
-.button-aluno{
-  background: var(--aluno-dark);
-  width: 100%;
-  height: 50px;
-  margin: 40px;
-  box-shadow: 1px 1px 5px 1px var(--black);
-  border-radius: 15px;
-}
-.button-prof{
-  background: var(--prof-dark);
-  width: 100%;
-  height: 50px;
-  margin: 40px;
-  box-shadow: 1px 1px 5px 1px var(--black);
-  border-radius: 15px;
-
-}
-.button-pais{
-  background: var(--pais-dark);
-  width: 100%;
-  height: 50px;
-  margin: 40px;
-  box-shadow: 1px 1px 5px 1px var(--black);
-  border-radius: 15px;
-}
-.button-func{
-  background: var(--func-dark);
-  width: 100%;
-  height: 50px;
-  margin: 40px;
-  text-align: center;
-  box-shadow: 1px 1px 5px 1px var(--black);
-  border-radius: 15px;
-
-   /* a{
-    width: 100%;
-    height: 50px; */
-}
 
 
 /* Navegação */
@@ -303,4 +133,13 @@ span > .material-icons {
   .side-nav {
     min-height: 100vh;
   }
+/*-------PAIS-------*/
+.pais-active, .pais-active:hover {
+  background-color: var(--pais-dark);
+  color: var(--white);
+  z-index: 3;
+}
+
+.pais-bg {
+  background-color: var(--pais-baby);
 }

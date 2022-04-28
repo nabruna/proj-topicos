@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-scola | Responsáveis | Vida escolar </title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-pais">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="align-middle">
+                    <span class="material-icons md-36">
+                        auto_stories
+                    </span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricular.html">Matricula</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Vida escolar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Financeiro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Conteúdo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contato com professores</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <button class="btn btn-danger">Logout</button>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 side-nav pais-bg">
+                <h2>Vida Escolar</h2>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action pais-active" aria-current="true">
+                        Notas
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Provas</a>
+                    <a href="#" class="list-group-item list-group-item-action">Frequência</a>
+                </div>
+            </div>
+            <div class="col">
+                <h2>
+
+        
+                </h2>
+                <!--<h2>Dados da Criança</h2>
+                <div class="row mx-auto w-50 my-4">
+                    <div class="input-group col">
+                        <label class="input-group-text" for="selecionarDia">Dia</label>
+                        <select class="form-select" id="selecionarDia">
+                            <option value="1">Segunda</option>
+                            <option value="2">Terça</option>
+                            <option value="2">Quarta</option>
+                            <option value="2">Quinta</option>
+                        </select>
+                    </div>
+                    <span class="col-auto">
+                        <button class="btn btn-outline-primary">Aplicar</button>
+                    </span>
+                </div> ----------------------------------------USAR NA FREQUENCIA-->
+
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-2">
+                            <h3 class="ps-2">Filho cadastrado</h3>
+                            <hr>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                        Angelina Vieira
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h3>Presenças</h3>
+                        <hr>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Aluno</th>
+                                    <th scope="col">Datas das faltas</th>
+                                    <th scope="col">Qtd</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Angelina Vieira</th>
+                                    <td>05/03</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">Total</th>
+                                    <td></td>
+                                    <td>1</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+
+
+
+                <table class="table table-hover m-2">
+                        <h3>Notas</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Aluno</th>
+                                    <th scope="col">N1</th>
+                                    <th scope="col">N2</th>
+                                    <th scope="col">N3</th>
+                                    <th scope="col">N4</th>
+                                    <th scope="col">Média</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Alice Ventura</th>
+                                    <td>7.3</td>
+                                    <td>8.2</td>
+                                    <td>n/a</td>
+                                    <td>n/a</td>
+                                    <td>7.7</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">Média geral</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>7.7</td>
+                                </tr>
+                            </tfoot>
+                        </table>   
+                </table>
+
+
+
+                <table class="table table-hover m-2">
+                    <h3>Provas detalhadas</h3>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">N1</th>
+                            <th scope="col">N2</th>
+                            <th scope="col">N3</th>
+                            <th scope="col">N4</th>
+                            <th scope="col">Média</th>
+                            <th scope="col">Filtrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Angelina Vieira</th>
+                            <td>7.3</td>
+                            <td>8.2</td>
+                            <td>n/a</td>
+                            <td>n/a</td>
+                            <td>7.7</td>
+                            <td>
+                                <div class="row">
+                                    <div class="input-group col">
+                                        <label class="input-group-text" for="selecionarProva">Selecionar prova</label>
+                                        <select class="form-select" id="selecionarProva">
+                                            <option value="n1">N1</option>
+                                            <option value="n2">N2</option>
+                                            <option value="n3">N3</option>
+                                            <option value="n4">N4</option>
+                                        </select>
+                                    </div>       
+                            </td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+
+
+
+                        <table class="table table-hover m-2">
+                            <h3>Frequência</h3>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Faltas atuais</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Angelina Vieira</th>
+                                    <td>2</td>
+                                </tr>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,6 +1,4 @@
 {
-<<<<<<< HEAD
-=======
   "name": "proj-topicos",
   "version": "1.0.0",
   "description": "Repositório para o projeto da matéria de Tópicos Especiais.",
@@ -19,7 +17,6 @@
     "url": "https://github.com/nanellide/proj-topicos/issues"
   },
   "homepage": "https://github.com/nanellide/proj-topicos#readme",
->>>>>>> 47f5eb7a24b8d28fd47bc68fb931b5d8edadc100
   "dependencies": {
     "bootstrap": "^5.1.3"
   }
