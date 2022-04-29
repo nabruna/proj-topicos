@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aluno</title>
+    <title>E-scola | Aluno | Calendário</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -57,54 +57,157 @@
             </span>
         </div>
     </nav>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2 side-nav aluno-bg">
                 <h2>Calendário</h2>
-                <ul class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action aluno-active">
-                        Janeiro
+                <ul class="list-group mb-3">
+                    <a href="#aulas" class="list-group-item list-group-item-action aluno-active">
+                        Aulas
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        Fevereiro
+                    <a a href="#provas" class="list-group-item list-group-item-action">
+                        Provas
                     </a>
-                    <a a href="#" class="list-group-item list-group-item-action">
-                        Março
+                    <a href="#trabalhos" class="list-group-item list-group-item-action">
+                        Trabalhos
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        Abril
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        Maio
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        Junho
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        Julho
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        Agosto
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        Setembro
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        Outubro
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        Novembro
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        Dezembro
+                    <a href="#atividades" class="list-group-item list-group-item-action">
+                        Atividades
                     </a>
                 </ul>
             </div>
 
-            <div class="col ms-2">
-                <iframe
-                    src="https://calendar.google.com/calendar/embed?src=brunanegrellideandrade%40gmail.com&ctz=America%2FSao_Paulo"
-                    style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <div class="col ms-3 mt-3 me-3">
+                <div class="row">
+                    <div class="col">
+                        <div id="aulas">
+                            <h3>Aulas</h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="col">Aulas</th>
+                                        <th class="col">Dias</th>
+                                        <th class="col">Horários</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matemática</td>
+                                        <td>Segunda-feira</td>
+                                        <td>9h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>História</td>
+                                        <td>Segunda-feira</td>
+                                        <td>11h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Geografia</td>
+                                        <td>Terça-feira</td>
+                                        <td>9h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ciências</td>
+                                        <td>Terça-feira</td>
+                                        <td>11h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Português</td>
+                                        <td>Quarta-feira</td>
+                                        <td>9h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Espanhol</td>
+                                        <td>Quinta-feira</td>
+                                        <td>9h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sociologia</td>
+                                        <td>Sexta-feira</td>
+                                        <td>11h</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div id="materias">
+                            <h3>Provas</h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="col">Matéria</th>
+                                        <th class="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matemática</td>
+                                        <td>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">28/02</li>
+                                                <li class="list-group-item">14/03</li>
+                                                <li class="list-group-item">28/03</li>
+                                                <li class="list-group-item">11/04</li>
+                                                <li class="list-group-item">09/05</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div id="materias">
+                            <h3>Trabalhos</h3>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="col">Matéria</th>
+                                        <th class="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Geografia</td>
+                                        <td>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">08/03</li>
+                                                <li class="list-group-item">19/04</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="atividades" class="row my-3">
+                    <h3>Atividades</h3>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="col">Atividade</th>
+                                <th class="col">Dias</th>
+                                <th class="col">Horário</th>
+                                <th class="col">Local</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fotografia</td>
+                                <td>Quarta-feira</td>
+                                <td>11h</td>
+                                <td>Sala 15B</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
             </div>
         </div>
     </div>
