@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-scola | Responsáveis | Matricular
+    </title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-pais">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <span class="align-middle">
+                    <span class="material-icons md-36">
+                        auto_stories
+                    </span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.html">Matricula</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vidaEscolar.html">Vida escolar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="financeiro.html">Financeiro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conteudo.html">Conteúdo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactProf.html">Contato com professores</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <button class="btn btn-danger" onclick="window.location.href='../index.html'">Logout</button>
+                </span>
+            </div>
+                
+           
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 side-nav pais-bg">
+                <h2>Matricular criança</h2>
+                <div class="list-group">
+                    <a href="#id-matricula" class="list-group-item list-group-item-action pais-active" aria-current="true" >
+                        Ano letivo
+                    </a>
+                    <a href="#id-ativ" class="list-group-item list-group-item-action">Atividades extras</a>
+                    <a href="#id-hr" class="list-group-item list-group-item-action">Horarios</a>
+                   
+                </div>
+
+            </div>
+            
+            <div class="col">
+                <div class="row">
+                    <table class="table table-hover m-2">
+                        
+                        <h3 id="id-matricula">Matricular criança no ano letivo</h3>
+                        <br></br>
+                        <thead>
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Ano</th>
+                                <th scope="col">Turma</th>
+                                <th scope="col">Nº matricula</th>
+                                <th scope="col">Filtrar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Angelina Vieira</th>
+                                <td>4º </td>
+                                <td>D</td>
+                                <td>042289</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="input-group col">
+                                            <label class="input-group-text" for="selecionarProva">Selecionar matricula</label>
+                                            <select class="form-select" id="selecionarProva">
+                                                <option value="n1">2022</option>
+                                                <option value="n2">2021</option>
+                                                <option value="n3">2020</option>
+                                                <option value="n4">2019</option>
+                                            </select>
+                                        </div>       
+                                </td>
+                            </tr>
+                            </tbody>
+                            </table>
+
+                            <br></br>
+                        
+
+                    <div class="col me-2">
+                        <br></br>
+                        <table class="table table-hover">
+                            <h3 id="id-ativ">Atividades extras</h3>
+                            <thead>
+                                <td><b>Atividades Disponíveis</b></td>
+                                <td></td>
+                            </thead>
+                            <tr>
+                                <td>Violão</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            <tr>
+                                <td>Clube do Bordado</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            <tr>
+                                <td>Clube de Videogames</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            <tr>
+                                <td>Matemática Avançada</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            <tr>
+                                <td>Física avançada</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            <tr>
+                                <td>Modelo NU</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            <tr>
+                                <td>Futebol</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            <tr>
+                                <td>Basquete</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            <tr>
+                                <td>Vôlei</td>
+                                <td><b>+</b></td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <div class="col ms-2">
+                        <br></br>
+                        <br></br>
+                        <table class="table table-hover">
+                            <thead>
+                                <td><b>Atividades Selecionadas</b></td>
+                                <td></td>
+                            </thead>
+                            <tr>
+                                <td>Fotografia</td>
+                                <td><b>-</b></td>
+                            </tr>
+                            <tr>
+                                <td>Hóquei no Gelo</td>
+                                <td><b>-</b></td>
+                            </tr>
+
+                            <tr>
+                                <td>Música</td>
+                                <td><b>-</b></td>
+                            </tr>
+
+                            <tr>
+                                <td>Teatro</td>
+                                <td><b>-</b></td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                    <div class="row-auto">
+                        <a class="btn btn-success" href="#" role="button" onclick="alertaFucn()">Matricular</a>
+                    </div>
+                
+                </div>
+
+                <div class="col mt-5">
+                    <h4 id="id-hr">Hóquei no Gelo</h4>
+                    <ul>
+                        ❄ Sábados, 8h - 12h
+                        <br>
+                        📌 Quadra B, ala par
+                        <br>
+                        🗣 Bernando Campos (bernardo@e-scola.com.br)
+                    </ul>
+                    <br>
+                    <h4>Música</h4>
+                    <ul>
+                        🎵 Terças, 13h - 15h
+                        <br>
+                        📌 Sala 315, ala ímpar
+                        <br>
+                        🗣 Sandra Ramos (sandra.r@e-scola.com.br)
+                    </ul>
+                    <br>
+                    <h4>Teatro</h4>
+                    <ul>
+                        🎭 Sextas, 10h - 13h
+                        <br>
+                        📌 Salão C, central
+                        <br>
+                        🗣 Amélia Carvalho (amelia15@e-scola.com.br)
+                    </ul>
+                </div>
+
+                
+        
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script> function alertaFucn() 
+    { alert("Tem certeza? Não é possivel desfazer a matricula!");
+    }
+    </script>
+
+</body>
+
+</html>

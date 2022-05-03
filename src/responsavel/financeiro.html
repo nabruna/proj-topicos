@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-scola | Responsáveis | Financeiro
+    </title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-pais">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <span class="align-middle">
+                    <span class="material-icons md-36">
+                        auto_stories
+                    </span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.html">Matricula</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vidaEscolar.html">Vida escolar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="financeiro.html">Financeiro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conteudo.html">Conteúdo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactProf.html">Contato com professores</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <button class="btn btn-danger" onclick="window.location.href='../index.html'">Logout</button>
+                </span>
+            </div>
+                
+           
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!--<div class="col-lg-2 side-nav pais-bg">
+                <h2>Matricular criança</h2>
+                <div class="list-group">
+                    <a href="#id-matricula" class="list-group-item list-group-item-action pais-active" aria-current="true" >
+                        Ano letivo
+                    </a>
+                    <a href="#id-ativ" class="list-group-item list-group-item-action">Atividades extras</a>
+                    <a href="#id-hr" class="list-group-item list-group-item-action">Horarios</a>
+                   
+                </div>
+
+            </div>0-->
+            
+            <div class="col">
+                <div class="row">
+                    <table class="table table-hover m-2">
+                        
+                        <h3 id="id-matricula">Selecione o mês e ano da fatura</h3>
+                        <br></br>
+                        <thead>
+                            <tr>
+                                <th scope="col">Aluno</th>
+                                <th scope="col">Nº matricula</th>
+                                <th scope="col">Filtrar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Angelina Vieira</th>
+                                <td>042289</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="input-group col">
+                                            <label class="input-group-text" for="selecionarProva">Selecionar mês</label>
+                                            <select class="form-select" id="selecionarProva">
+                                                <option value="n1">janeiro</option>
+                                                <option value="n2">fevereiro</option>
+                                                <option value="n3">março</option>
+                                                <option value="n4">abril</option>
+                                                <option value="n2">maio</option>
+                                                <option value="n3">junho</option>
+                                                <option value="n4">julho</option>
+                                                <option value="n2">agosto</option>
+                                                <option value="n3">setembro</option>
+                                                <option value="n4">outubro</option>
+                                            </select>
+                                        </div>  
+                                        <div class="input-group col">
+                                            <label class="input-group-text" for="selecionarProva">Selecionar ano</label>
+                                            <select class="form-select" id="selecionarProva">
+                                                <option value="n1">2022</option>
+                                                <option value="n2">2021</option>
+                                                <option value="n3">2020</option>
+                                                <option value="n4">2019</option>
+                                            </select>
+                                        </div>       
+                                </td>
+                            </tr>
+                            </tbody>
+                            </table>
+
+
+                            <section class="justify-content-center py-5" style="max-width: 100%">
+                                <h3 id="id-ativ">Escolha o metodo para envio da fatura</h3>
+
+                                <div class="row mb-3 mx-3">
+                                    <label for="emailProf" class="text-start form-label fw-bold">Email:</label>
+                                    <input type="email" class="form-control" id="emailProf" placeholder="email@e-scola.com"
+                                        aria-label="insira seu e-mail">
+                                        <button type="submit" class="btn btn-outline-success my-4" onclick="alertaFunc()">Enviar</button>
+                                </div>
+                                <div class="row mb-3 mx-3">
+                                    <label for="emailProf" class="text-start form-label fw-bold">Celular:</label>
+                                    <input type="tel" class="form-control" id="emailProf" placeholder="(41)9****-****"
+                                        aria-label="insira seu número">
+                                        <button type="submit" class="btn btn-outline-success my-4" onclick="alertaFunc()">Enviar</button>
+                                </div>
+                            </section>   
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script> function alertaFunc() 
+        { alert("Tem certeza? Não é possivel desfazer o envio!");
+        }
+        </script>
+</body>
+</html>

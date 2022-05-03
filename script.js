@@ -4,3 +4,8 @@ function create() {
         button[y].addEventListener('click', create);
     }
 }
+
+function alertaFucn() {
+    alert("Tem certeza? Não é possivel desfazer a matricula!");
+}
+    
