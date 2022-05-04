@@ -48,7 +48,7 @@
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    <button class="btn btn-danger" onclick="window.location.href='../index.html'">Logout</button>
+                    <button class="btn btn-danger" onclick="saida(this)" href='../index.html'>Logout</button>
                 </span>
             </div>
                 
@@ -121,15 +121,24 @@
 
 
                             <section class="justify-content-center py-5" style="max-width: 100%">
-                                <h3 id="id-ativ">Escolha o metodo para envio da fatura</h3>
-
+                                <h3 id="id-ativ">Valide seu CPF</h3>
+                                
                                 <div class="row mb-3 mx-3">
+                    
+                                <label for="cpf" class="text-start form-label fw-bold">Preencha seu CPF:</label>
+                                    <input type="cpf" data-type="cpf" class="form-control" placeholder="***********"
+                                        aria-label="insira seu CPF" required>
+                                        <button type="submit" class="btn btn-outline-success my-4" onclick="checarCPFrepedito()">Confirmar</button>
+                                </div>
+                                
+                                <h4>Escolha o metodo para envio da fatura</h4>
+                                <div class="row mb-3 mx-3">
+
                                     <label for="emailProf" class="text-start form-label fw-bold">Email:</label>
                                     <input type="email" class="form-control" id="emailProf" placeholder="email@e-scola.com"
                                         aria-label="insira seu e-mail">
                                         <button type="submit" class="btn btn-outline-success my-4" onclick="alertaFunc()">Enviar</button>
-                                </div>
-                                <div class="row mb-3 mx-3">
+                                
                                     <label for="emailProf" class="text-start form-label fw-bold">Celular:</label>
                                     <input type="tel" class="form-control" id="emailProf" placeholder="(41)9****-****"
                                         aria-label="insira seu número">
@@ -143,9 +152,23 @@
         </div>
     </div>
 
-    <script> function alertaFunc() 
-        { alert("Tem certeza? Não é possivel desfazer o envio!");
+    <script> function alertaFunc() { 
+        alert("Tem certeza? Não é possivel desfazer o envio!");
         }
-        </script>
+
+        //function sair(){
+        //if (confirm('Tem certeza que deseja sair desta página?')) {
+          //  closeSession();
+          //  location.href='../index.html';
+       // }
+   // }
+
+    function saida(link) {
+    if (confirm('Tem certeza que deseja sair da páginaaaaaa?'))
+        link.name = 1;
+    }
+
+</script>
+
 </body>
 </html>
