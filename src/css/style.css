@@ -146,5 +146,7 @@ span > .material-icons {
 @media screen and (min-width: 1000px) {
   .side-nav {
     min-height: 100vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }

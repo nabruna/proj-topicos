@@ -62,13 +62,51 @@
             <div class="col-lg-2 side-nav prof-bg">
                 <h2>Materiais</h2>
                 <div class="list-group">
-                    <a href="./materiais/turma.html" class="list-group-item list-group-item-action"
-                        aria-current="true">Para turma</a>
-                    <a href="./materiais/aluno.html" class="list-group-item list-group-item-action"
-                        aria-current="true">Para aluno</a>
+                    <a href="#" class="list-group-item list-group-item-action prof-active" aria-current="true">Para
+                        turma</a>
+                    <a href="./materiais/aluno.html" class="list-group-item list-group-item-action" aria-current="true">Para
+                        aluno</a>
                 </div>
             </div>
             <div class="col">
+                <h2>Registrar materiais para a turma</h2>
+
+                <div class="row my-3">
+                    <div class="input-group col">
+                        <label class="input-group-text" for="selecionarMateria">Matéria</label>
+                        <select class="form-select" id="selecionarMateria">
+                            <option value="1">Matemática</option>
+                            <option value="2">Matemática avançada</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group col">
+                        <label class="input-group-text" for="selecionarDia">Dia</label>
+                        <select class="form-select" id="selecionarDia">
+                            <option value="1">Segunda</option>
+                            <option value="2">Terça</option>
+                            <option value="2">Quarta</option>
+                            <option value="2">Quinta</option>
+                        </select>
+                    </div>
+
+                    <div class="col-auto">
+                        <button class="btn btn-outline-primary">Aplicar</button>
+                    </div>
+                </div>
+
+                <div class="card p-4 my-3 ms-1">
+                    <label for="selecionarArquivos" class="h4 text-center my-5 form-label">Selecionar arquivos</label>
+                    <input class="form-control" type="file" id="selecionarArquivos" multiple />
+                    <div class="row">
+                        <div class="text-end">
+                            <a href="#" class="link-primary">Limpar</a>
+                        </div>
+                    </div>
+                    <div class="row my-3 mx-auto">
+                        <button class="btn btn-outline-success">Fazer upload</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

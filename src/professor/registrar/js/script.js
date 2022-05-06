@@ -37,7 +37,7 @@ function registrarProva() {
   var tabelaProvas = document.getElementById("tabelaProvas").innerHTML; // identifica tabela de provas
 
   var materiaProva = listaMaterias.value.toString(); // transforma valor no menu select em string
-  var dataProva = document.getElementById("dataProva").value;
+  var dataProva = document.getElementById("dataProva").value; // identifica valor da data da prova
   var nomeProva = document.querySelector(
     'input[name="nomeProva"]:checked'
   ).value; // identifica elementos do input do usuário
@@ -49,11 +49,11 @@ function registrarProva() {
     "</th><td>" +
     dataProva +
     "</td><td>" +
-    nomeProva.toString() +
+    nomeProva.toString() + // transforma valor do nome da prova em string
     "</td></tr>"; // gera nova linha na tabela
 
   document.getElementById("tabelaProvas").innerHTML = tabelaProvas;
-  avisoProvaCadastrada.style.display = "initial";
+  avisoProvaCadastrada.style.display = "initial"; // mostra aviso de sucesso
 }
 
 // Registrar atividades extras
@@ -69,7 +69,7 @@ function registrarAtividade() {
 
   if (listaAtividades.length < 2) {
     var diaAtividade = diasAtividade.value.toString(); // transforma valor selecionado em string
-    var nomeAtividade = document.getElementById("nomeAtividade").value;
+    var nomeAtividade = document.getElementById("nomeAtividade").value; // identifica nome da atividade
 
     tabelaAtividades =
       tabelaAtividades +
@@ -79,11 +79,11 @@ function registrarAtividade() {
       diaAtividade +
       "</td></tr>";
 
-    listaAtividades.push(nomeAtividade);
-    document.getElementById("tabelaAtividades").innerHTML = tabelaAtividades;
-    avisoAtividadeRegistrada.style.display = "initial";
+    listaAtividades.push(nomeAtividade); // inclui atividade no array
+    document.getElementById("tabelaAtividades").innerHTML = tabelaAtividades; // atualiza tabela de atividades
+    avisoAtividadeRegistrada.style.display = "initial"; // mostra aviso de sucesso
   } else {
     avisoAtividadeRegistrada.style.display = "none";
-    avisoLimiteAtividades.style.display = "initial";
+    avisoLimiteAtividades.style.display = "initial"; // mostra aviso de limite e apaga sucesso
   }
 }

@@ -62,7 +62,7 @@
             <div class="col-lg-2 side-nav prof-bg">
                 <h2>Materiais</h2>
                 <div class="list-group">
-                    <a href="./turma.html" class="list-group-item list-group-item-action" aria-current="true">Para
+                    <a href="../materiais.html" class="list-group-item list-group-item-action" aria-current="true">Para
                         turma</a>
                     <a href="#" class="list-group-item list-group-item-action prof-active" aria-current="true">Para
                         aluno</a>
@@ -71,34 +71,35 @@
             <div class="col">
                 <h2>Registrar materiais para alunos específicos</h2>
 
-                <div class="row my-3">
-                    <div class="input-group col">
-                        <label class="input-group-text" for="selecionarMateria">Selecionar aluno</label>
-                        <select class="form-select" id="selecionarMateria">
-                            <option value="1">Leonardo Vieira</option>
-                            <option value="2">Diego Mantovani</option>
-                        </select>
+                <div class="input-group row mt-3">
+                    <div class="form-outline col">
+                        <input type="search" id="pesquisaAluno" class="form-control" placeholder="Buscar" />
                     </div>
-                    <div class="col-auto">
-                        <button class="btn btn-outline-primary">Aplicar</button>
+                    <div class="col-auto"><button type="button" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
                     </div>
-                </div>
 
-                <div class="card p-4 my-3 ms-1">
-                    <label for="selecionarArquivos" class="h4 text-center my-5 form-label">Selecionar arquivos</label>
-                    <input class="form-control" type="file" id="selecionarArquivos" multiple />
-                    <div class="row">
-                        <div class="text-end">
-                            <a href="#" class="link-primary">Limpar</a>
+                    <div class="card p-4 m-3">
+                        <label for="selecionarArquivos" class="h4 text-center my-5 form-label">Selecionar
+                            arquivos</label>
+                        <input class="form-control" type="file" id="selecionarArquivos" multiple />
+                        <div class="row">
+                            <div class="text-end">
+                                <a href="#" class="link-primary">Limpar</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row my-3 mx-auto">
-                        <button class="btn btn-outline-success">Fazer upload</button>
+                        <div class="row my-3 mx-auto">
+                            <button class="btn btn-outline-success">Fazer upload</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
