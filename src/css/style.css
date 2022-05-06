@@ -37,12 +37,11 @@ footer {
 }
 
 .btn-outline-orange {
-  color: #f57b29;
   border-color: #f57b29;
 }
 
 .btn-outline-orange:hover, .btn-outline-orange:active {
-  color: #fff;
+  color: #fff !important; 
   background-color: #f57b29;
   border-color: #f57b29;
 }
@@ -60,6 +59,10 @@ footer {
 
 
 /* Navegação */
+.side-nav {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
 
 .nav-pais {
   background-color: var(--pais-light);
@@ -129,11 +132,6 @@ span > .material-icons {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-  .side-nav {
-    min-height: 100vh;
-  }
-}
 /*-------PAIS-------*/
 .pais-active, .pais-active:hover {
   background-color: var(--pais-dark);
@@ -143,4 +141,10 @@ span > .material-icons {
 
 .pais-bg {
   background-color: var(--pais-baby);
+}
+
+@media screen and (min-width: 1000px) {
+  .side-nav {
+    min-height: 100vh;
+  }
 }

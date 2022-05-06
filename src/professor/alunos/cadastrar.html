@@ -64,22 +64,36 @@
                 <div class="list-group">
                     <a href="../alunos.html" class="list-group-item list-group-item-action" aria-current="true">Lista de
                         alunos</a>
-                </div>
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action prof-active">Cadastrar em aulas e
+                    <a href="#" class="list-group-item list-group-item-action prof-active">Cadastrar em
                         atividades</a>
+                    <a href="./requisicoes.html" class="list-group-item list-group-item-action">Requisições
+                        pendentes</a>
                 </div>
             </div>
             <div class="col">
                 <h2>Cadastrar aluno</h2>
+
+                <div class="input-group row">
+                    <div class="form-outline col">
+                        <input type="search" id="pesquisaAluno" class="form-control" placeholder="Buscar" />
+                    </div>
+                    <div class="col-auto"><button type="button" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
 
                 <div class="row m-2">
                     <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col">Nome</th>
-                                <th scope="col">Matéria</th>
-                                <th scope="col">Atividade</th>
+                                <th scope="col">Registrar</th>
                                 <th scope="col">Atividades registradas</th>
                             </tr>
                         </thead>
@@ -89,32 +103,17 @@
                                 <td>
                                     <div class="row">
                                         <div class="col">
-                                            <select class="form-select">
-                                                <option value="1">Matemática</option>
-                                                <option value="2">Matemática avançada</option>
-                                            </select>
+                                            <input type="text" id="inputAtividade" class="form-control"
+                                                placeholder="Atividade">
                                         </div>
                                         <div class="col">
-                                            <button class="btn btn-outline-success">Registrar</button>
+                                            <button id="registrar" class="btn btn-outline-success"
+                                                onclick="cadastrarAtividade()">Registrar</button>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="row">
-                                        <div class="col">
-                                            <select class="form-select">
-                                                <option value="1">Clube da Olimpíada de Matemática</option>
-                                            </select>
-                                        </div>
-                                        <div class="col">
-                                            <button class="btn btn-outline-success">Registrar</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">N/A</li>
-                                    </ul>
+                                    <ul class="list-group" id="listaAtividades"></ul>
                                 </td>
                             </tr>
                             <tr>
@@ -122,33 +121,17 @@
                                 <td>
                                     <div class="row">
                                         <div class="col">
-                                            <select class="form-select">
-                                                <option value="1">Matemática</option>
-                                                <option value="2">Matemática avançada</option>
-                                            </select>
+                                            <input type="text" id="inputAtividade" class="form-control"
+                                                placeholder="Atividade">
                                         </div>
                                         <div class="col">
-                                            <button class="btn btn-outline-success">Registrar</button>
+                                            <button id="registrar" class="btn btn-outline-success"
+                                                onclick="cadastrarAtividade()">Registrar</button>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="row">
-                                        <div class="col">
-                                            <select class="form-select">
-                                                <option value="1">Clube da Olimpíada de Matemática</option>
-                                            </select>
-                                        </div>
-                                        <div class="col">
-                                            <button class="btn btn-outline-success">Registrar</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Culinária</li>
-                                        <li class="list-group-item">História avançada</li>
-                                    </ul>
+                                    <ul class="list-group" id="listaAtividades"></ul>
                                 </td>
                             </tr>
                             <tr>
@@ -156,32 +139,17 @@
                                 <td>
                                     <div class="row">
                                         <div class="col">
-                                            <select class="form-select">
-                                                <option value="1">Matemática</option>
-                                                <option value="2">Matemática avançada</option>
-                                            </select>
+                                            <input type="text" id="inputAtividade" class="form-control"
+                                                placeholder="Atividade">
                                         </div>
                                         <div class="col">
-                                            <button class="btn btn-outline-success">Registrar</button>
+                                            <button id="registrar" class="btn btn-outline-success"
+                                                onclick="cadastrarAtividade()">Registrar</button>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="row">
-                                        <div class="col">
-                                            <select class="form-select">
-                                                <option value="1">Clube da Olimpíada de Matemática</option>
-                                            </select>
-                                        </div>
-                                        <div class="col">
-                                            <button class="btn btn-outline-success">Registrar</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Clube do livro</li>
-                                    </ul>
+                                    <ul class="list-group" id="listaAtividades"></ul>
                                 </td>
                             </tr>
                             <tr>
@@ -189,33 +157,17 @@
                                 <td>
                                     <div class="row">
                                         <div class="col">
-                                            <select class="form-select">
-                                                <option value="1">Matemática</option>
-                                                <option value="2">Matemática avançada</option>
-                                            </select>
+                                            <input type="text" id="inputAtividade" class="form-control"
+                                                placeholder="Atividade">
                                         </div>
                                         <div class="col">
-                                            <button class="btn btn-outline-success">Registrar</button>
+                                            <button id="registrar" class="btn btn-outline-success"
+                                                onclick="cadastrarAtividade()">Registrar</button>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="row">
-                                        <div class="col">
-                                            <select class="form-select">
-                                                <option value="1">Clube da Olimpíada de Matemática</option>
-                                            </select>
-                                        </div>
-                                        <div class="col">
-                                            <button class="btn btn-outline-success">Registrar</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Skateboarding</li>
-                                        <li class="list-group-item">Física avançada</li>
-                                    </ul>
+                                    <ul class="list-group" id="listaAtividades"></ul>
                                 </td>
                             </tr>
                             <tr>
@@ -223,80 +175,28 @@
                                 <td>
                                     <div class="row">
                                         <div class="col">
-                                            <select class="form-select">
-                                                <option value="1">Matemática</option>
-                                                <option value="2">Matemática avançada</option>
-                                            </select>
+                                            <input type="text" id="inputAtividade" class="form-control"
+                                                placeholder="Atividade">
                                         </div>
                                         <div class="col">
-                                            <button class="btn btn-outline-success">Registrar</button>
+                                            <button id="registrar" class="btn btn-outline-success"
+                                                onclick="cadastrarAtividade()">Registrar</button>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="row">
-                                        <div class="col">
-                                            <select class="form-select">
-                                                <option value="1">Clube da Olimpíada de Matemática</option>
-                                            </select>
-                                        </div>
-                                        <div class="col">
-                                            <button class="btn btn-outline-success">Registrar</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Fotografia</li>
-                                        <li class="list-group-item">Francês</li>
-                                    </ul>
+                                    <ul class="list-group" id="listaAtividades"></ul>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
-                <h2>Aprovar requisições</h1>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Matérias</th>
-                                <th scope="col">Atividades registradas</th>
-                                <th scope="col">Aprovar</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Carlos Mignon</th>
-                                <td>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Português</li>
-                                        <li class="list-group-item">Matemática</li>
-                                        <li class="list-group-item">Física</li>
-                                        <li class="list-group-item">Química</li>
-                                        <li class="list-group-item">História</li>
-                                        <li class="list-group-item">Geografia</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Fotografia</li>
-                                        <li class="list-group-item">Francês</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <div class="row-auto">
-                                        <button class="btn btn-outline-success">Aprovar</button>
-                                        <button class="btn btn-outline-danger">Reprovar</button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
             </div>
         </div>
     </div>
+
+
+    <script type="text/javascript" src="../js/script.js"></script>
 </body>
 
 </html>
