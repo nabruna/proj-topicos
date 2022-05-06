@@ -64,71 +64,85 @@
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action prof-active" aria-current="true">Lista de
                         alunos</a>
-                    <a href="./alunos/cadastrar.html" class="list-group-item list-group-item-action">Cadastrar em aulas
-                        e atividades</a>
+                    <a href="./alunos/cadastrar.html" class="list-group-item list-group-item-action">Cadastrar em atividades</a>
                     <a href="./alunos/requisicoes.html" class="list-group-item list-group-item-action">Requisições
                         pendentes</a>
                 </div>
             </div>
             <div class="col">
                 <h2>Lista de alunos</h2>
-                <table class="table m-2">
-                    <thead>
-                        <tr>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Matérias e dias</th>
-                            <th scope="col">Atividades extras</th>
-                            <th scope="col">Responsável</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Alice Franco
-                                <a href="mailto:alicefranco@escola.com"><img src="../assets/email.svg" alt="Email"></a>
-                                <a href="tel:+554197686756"><img src="../assets/sms.svg" alt="SMS"></a>
-                            </th>
-                            <td>
-                                <div class="row">
-                                    <div class="col">
-                                        <ul class="list-group">
-                                            <li class="list-group-item">Português</li>
-                                            <li class="list-group-item">Matemática</li>
-                                            <li class="list-group-item">Filosofia</li>
-                                            <li class="list-group-item">Sociologia</li>
-                                            <li class="list-group-item">Física</li>
-                                            <li class="list-group-item">Química</li>
-                                            <li class="list-group-item">Educação Física</li>
-                                        </ul>
+
+                <div class="input-group row">
+                    <div class="form-outline col">
+                        <input type="search" id="pesquisaAluno" class="form-control" placeholder="Buscar" />
+                    </div>
+                    <div class="col-auto"><button type="button" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <table class="table m-2">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Matérias e dias</th>
+                                <th scope="col">Atividades extras</th>
+                                <th scope="col">Responsável</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Alice Franco
+                                    <a href="mailto:alicefranco@escola.com"><img src="../assets/email.svg"
+                                            alt="Email"></a>
+                                    <a href="tel:+554197686756"><img src="../assets/sms.svg" alt="SMS"></a>
+                                </th>
+                                <td>
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Português</li>
+                                                <li class="list-group-item">Matemática</li>
+                                                <li class="list-group-item">Filosofia</li>
+                                                <li class="list-group-item">Sociologia</li>
+                                                <li class="list-group-item">Física</li>
+                                                <li class="list-group-item">Química</li>
+                                                <li class="list-group-item">Educação Física</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Segunda</li>
+                                                <li class="list-group-item">Quarta</li>
+                                                <li class="list-group-item">Terça</li>
+                                                <li class="list-group-item">Terça</li>
+                                                <li class="list-group-item">Quinta</li>
+                                                <li class="list-group-item">Quinta</li>
+                                                <li class="list-group-item">Sexta</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="col">
-                                        <ul class="list-group">
-                                            <li class="list-group-item">Segunda</li>
-                                            <li class="list-group-item">Quarta</li>
-                                            <li class="list-group-item">Terça</li>
-                                            <li class="list-group-item">Terça</li>
-                                            <li class="list-group-item">Quinta</li>
-                                            <li class="list-group-item">Quinta</li>
-                                            <li class="list-group-item">Sexta</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <li class="list-group-item">Dança de salão</li>
-                                <li class="list-group-item">Vôlei</li>
-                            </td>
-                            <td>
-                                Maria Cristina Franco
-                                <a href="mailto:mariacrisfranco@paisescola.com"><img src="../assets/email.svg"
-                                        alt="Email"></a>
-                                <a href="tel:+554198786758"><img src="../assets/sms.svg" alt="SMS"></a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                </td>
+                                <td>
+                                    <li class="list-group-item">Dança de salão</li>
+                                    <li class="list-group-item">Vôlei</li>
+                                </td>
+                                <td>
+                                    Maria Cristina Franco
+                                    <a href="mailto:mariacrisfranco@paisescola.com"><img src="../assets/email.svg"
+                                            alt="Email"></a>
+                                    <a href="tel:+554198786758"><img src="../assets/sms.svg" alt="SMS"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
