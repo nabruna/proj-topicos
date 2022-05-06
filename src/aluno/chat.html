@@ -59,13 +59,14 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2 side-nav aluno-bg">
-              <h2>Chat</h2>
-        
-              
+                <h2>Chat</h2>
+
+
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action aluno-active" aria-current="true">Prof. Mariana Costa</a>
+                    <a href="#" class="list-group-item list-group-item-action aluno-active" aria-current="true">Prof.
+                        Mariana Costa</a>
                 </div>
-                  
+
             </div>
             <div class="col">
 
@@ -80,7 +81,7 @@
                                         Olá professora, gostaria de saber sobre a nota do trabalho extra da Alice.
                                     </p>
                                     <br>
-                                    
+
                                     <p class="badge bg-secondary text-wrap fs-6">
                                         Olá Alice, irei corrigir seu trabalho hoje.
                                     </p>
@@ -89,26 +90,28 @@
                                     <p class="badge bg-primary text-wrap fs-6 text-start">
                                         Obrigada professora.
                                     </p>
+                                    <br>
+                                    <span id="mensagemEnviada"></span>
 
-
+                                    <br>
                                     <div class="row">
                                         <div class="form-floating col">
-                                            <textarea class="form-control" placeholder="Digite uma mensagem" id="floatingTextarea2"></textarea>
+                                            <textarea class="form-control" placeholder="Digite uma mensagem"
+                                                id="mensagem"></textarea>
                                         </div>
                                         <span class="col-auto">
-                                            <button type="submit" value="enviarMsg" class="btn btn-outline-primary">Enviar</button>
+                                            <button type="submit" value="enviarMsg" class="btn btn-outline-primary"
+                                                onclick="enviarMensagem()">Enviar</button>
                                         </span>
                                     </div>
-                                    
-                                    
                                 </tr>
-                             </tbody>
-                              
+                            </tbody>
+
                         </table>
                     </div>
                 </div>
             </div>
-
+        <script src="./script.js"></script>
 </body>
 
 </html>
