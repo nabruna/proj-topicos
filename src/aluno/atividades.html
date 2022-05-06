@@ -35,7 +35,7 @@
                             <a class="nav-link" href="calendario.html">Calendário</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="disciplinas.html">Disciplinas</a>
+                            <a class="nav-link" href="materiais.html">Materiais</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="agenda.html">Agenda de provas</a>
@@ -78,39 +78,39 @@
                             </thead>
                             <tr>
                                 <td>Violão</td>
-                                <td><b>+</b></td>
+                                <td><b><button class="btn" type="submit" onclick="atividadeViolao()">+</b></td></button>
                             </tr>
                             <tr>
                                 <td>Clube do Bordado</td>
-                                <td><b>+</b></td>
+                                <td><b><button class="btn" type="submit" onclick="atividadeBordado()">+</b></td></button>
                             </tr>
                             <tr>
                                 <td>Clube de Videogames</td>
-                                <td><b>+</b></td>
+                                <td><b><button class="btn"type="submit" onclick="atividadeGames()">+</b></td></button>
                             </tr>
                             <tr>
                                 <td>Matemática Avançada</td>
-                                <td><b>+</b></td>
+                                <td><b><button class="btn" type="submit" onclick="atividadeMatematica()">+</b></td></button>
                             </tr>
                             <tr>
-                                <td>Física avançada</td>
-                                <td><b>+</b></td>
+                                <td>Física Avançada</td>
+                                <td><b><button class="btn" type="submit" onclick="atividadeFisica()">+</b></td></button>
                             </tr>
                             <tr>
-                                <td>Modelo NU</td>
-                                <td><b>+</b></td>
+                                <td>Moda</td>
+                                <td><b><button class="btn" type="submit" onclick="atividadeModa()">+</b></td></button>
                             </tr>
                             <tr>
                                 <td>Futebol</td>
-                                <td><b>+</b></td>
+                                <td><b><button class="btn" type="submit" onclick="atividadeFutebol()">+</b></td></button>
                             </tr>
                             <tr>
                                 <td>Basquete</td>
-                                <td><b>+</b></td>
+                                <td><b><button class="btn" type="submit" onclick="atividadeBasquete()">+</b></td></button>
                             </tr>
                             <tr>
                                 <td>Vôlei</td>
-                                <td><b>+</b></td>
+                                <td><b><button class="btn" type="submit" onclick="atividadeVolei()">+</b></td></button>
                             </tr>
                         </table>
                     </div>
@@ -124,21 +124,22 @@
                             </thead>
                             <tr>
                                 <td>Fotografia</td>
-                                <td><b>-</b></td>
+                                <td><b><button class="btn" type="reset" onclick="atividadeFotografia()">-</b></td></button>
                             </tr>
+
                             <tr>
                                 <td>Hóquei no Gelo</td>
-                                <td><b>-</b></td>
+                                <td><b><button class="btn" type="reset" onclick="atividadeHoquei()">-</b></td></button>
                             </tr>
 
                             <tr>
                                 <td>Música</td>
-                                <td><b>-</b></td>
+                                <td><b><button class="btn" type="reset" onclick="atividadeMusica()">-</b></td></button>
                             </tr>
 
                             <tr>
                                 <td>Teatro</td>
-                                <td><b>-</b></td>
+                                <td><b><button class="btn" type="reset" onclick="atividadeTeatro()">-</b></td></button>
                             </tr>
                         </table>
                     </div>
@@ -184,6 +185,7 @@
     </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
