@@ -113,22 +113,24 @@
                                     <p class="badge bg-success text-wrap fs-6 text-start">
                                         Perfeito, marcamos sim, obrigada pela atenção.
                                     </p>
+                                    
                                     <br>
-                                    <p class="badge bg-secondary text-wrap fs-6">
-                                        Disponha, até.
-                                    </p>
+                                    <span id="mensagemEnviada"></span>
+
                                     <br>
-
-
                                     <div class="row">
                                         <div class="form-floating col">
-                                            <textarea class="form-control" placeholder="Digite uma mensagem" id="floatingTextarea2"></textarea>
+                                            <textarea class="form-control" placeholder="Digite uma mensagem"
+                                                id="mensagem"></textarea>
                                         </div>
                                         <span class="col-auto">
-                                            <button type="submit" class="btn btn-outline-success">Enviar</button>
-                                           
+                                            <button type="submit" value="enviarMsg" class="btn btn-outline-success"
+                                                onclick="enviarMensagem()">Enviar</button>
                                         </span>
                                     </div>
+
+
+                                    
                                     
                                     
                                 </tr>

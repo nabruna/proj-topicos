@@ -80,3 +80,12 @@ $('form').submit(function (e) {
   e.target.reset();
   $(e.target).find('input').focus();
 });
+
+function enviarMensagem() {
+  var mensagem = document.getElementById("mensagem").value;
+  var mensagemEnviada  = document.getElementById("mensagemEnviada").innerHTML;
+  mensagem = '<p class="badge bg-primary text-wrap fs-6 text-start">' + mensagem + '</p>';
+  
+  document.getElementById("mensagemEnviada").innerHTML = mensagem;
+  console.log(mensagem)
+}
