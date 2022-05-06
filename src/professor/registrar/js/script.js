@@ -38,7 +38,9 @@ function registrarProva() {
 
   var materiaProva = listaMaterias.value.toString(); // transforma valor no menu select em string
   var dataProva = document.getElementById("dataProva").value;
-  var nomeProva = document.querySelector('input[name="nomeProva"]:checked').value; // identifica elementos do input do usuário
+  var nomeProva = document.querySelector(
+    'input[name="nomeProva"]:checked'
+  ).value; // identifica elementos do input do usuário
 
   tabelaProvas =
     tabelaProvas +
@@ -64,7 +66,7 @@ var avisoLimiteAtividades = document.getElementById("avisoLimiteAtividades");
 
 function registrarAtividade() {
   var tabelaAtividades = document.getElementById("tabelaAtividades").innerHTML; // identifica tabela de atividades
-  
+
   if (listaAtividades.length < 2) {
     var diaAtividade = diasAtividade.value.toString(); // transforma valor selecionado em string
     var nomeAtividade = document.getElementById("nomeAtividade").value;
