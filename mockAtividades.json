@@ -1,0 +1,13 @@
+[
+    { "atividades":
+        [
+            {
+                "dia": "Sexta-feira",
+                "horario": "19h",
+                "local": "Auditório A",
+                "profResponsavel": "NOME SOBRENOME",
+                "valor": 80
+            }
+        ]
+    }
+]

@@ -1,13 +1,10 @@
 [
-  { "aluno": [
       { "nome": "NOME SOBRENOME",
         "responsavel": "NOME SOBRENOME",
         "turma": "8 B",
         "materias": [
           {
             "nomeMateria": "Biologia",
-            "professor": "NOME SOBRENOME",
-            "dia": "Segunda-feira",
             "notas": [
               { "prova1": 5 },
               { "prova2": 7 },
@@ -118,22 +115,8 @@
           }
         ],
         "atividades": [
-          {
-            "nomeAtividade": "Fotografia",
-            "dia": "Segunda-feira",
-            "horario": "17h",
-            "local": "Sala 3",
-            "profResponsavel": "NOME SOBRENOME",
-            "valor": 100
-          },
-          {
-            "nomeAtividade": "Francês",
-            "dia": "Sexta-feira",
-            "horario": "19h",
-            "local": "Auditório A",
-            "profResponsavel": "NOME SOBRENOME",
-            "valor": 80
-          }
+          { "nomeAtividade": "Fotografia" },
+          { "nomeAtividade": "Francês" }
         ]
       }
     ]
