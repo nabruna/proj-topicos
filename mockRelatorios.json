@@ -2,11 +2,12 @@
   { "aluno": [
       { "nome": "NOME SOBRENOME",
         "responsavel": "NOME SOBRENOME",
-        "ano": "8",
+        "turma": "8 B",
         "materias": [
           {
             "nomeMateria": "Biologia",
             "professor": "NOME SOBRENOME",
+            "dia": "Segunda-feira",
             "notas": [
               { "prova1": 5 },
               { "prova2": 7 },
@@ -28,6 +29,7 @@
           {
             "nomeMateria": "Matemática",
             "professor": "NOME SOBRENOME",
+            "dia": "Terça-feira",
             "notas": [
               { "prova1": 6 },
               { "prova2": 8 },
@@ -45,6 +47,7 @@
           {
             "nomeMateria": "Português",
             "professor": "NOME SOBRENOME",
+            "dia": "Quarta-feira",
             "notas": [
               { "prova1": 5.5 },
               { "prova2": 9 },
@@ -62,6 +65,7 @@
           {
             "nomeMateria": "História",
             "professor": "NOME SOBRENOME",
+            "dia": "Quinta-feira",
             "notas": [
               { "prova1": 7 },
               { "prova2": 8 },
@@ -79,6 +83,7 @@
           {
             "nomeMateria": "Geografia",
             "professor": "NOME SOBRENOME",
+            "dia": "Sexta-feira",
             "notas": [
               { "prova1": 5 },
               { "prova2": 9 },
@@ -96,6 +101,7 @@
           {
             "nomeMateria": "Física",
             "professor": "NOME SOBRENOME",
+            "dia": "Terça-feira",
             "notas": [
               { "prova1": 5 },
               { "prova2": 6 },
@@ -114,15 +120,19 @@
         "atividades": [
           {
             "nomeAtividade": "Fotografia",
+            "dia": "Segunda-feira",
             "horario": "17h",
             "local": "Sala 3",
-            "profResponsavel": "NOME SOBRENOME"
+            "profResponsavel": "NOME SOBRENOME",
+            "valor": 100
           },
           {
             "nomeAtividade": "Francês",
+            "dia": "Sexta-feira",
             "horario": "19h",
             "local": "Auditório A",
-            "profResponsavel": "NOME SOBRENOME"
+            "profResponsavel": "NOME SOBRENOME",
+            "valor": 80
           }
         ]
       }

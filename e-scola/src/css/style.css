@@ -34,6 +34,7 @@ footer {
   width: 100%;
   background-color: var(--gen-light);
   color: var(--gen-dark);
+  text-align: center;
 }
 
 .btn-outline-orange {

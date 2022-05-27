@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Footer from './components/Shared/Footer';
 import reportWebVitals from './reportWebVitals';
+import LoginButtons from './components/Shared/LoginButtons';
+import Contato from './components/Shared/Contato';
+import HeaderLogin from './components/Shared/HeaderLogin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <HeaderLogin />
+    <LoginButtons />
+    <Contato />
+    <Footer />
   </React.StrictMode>
 );
 
