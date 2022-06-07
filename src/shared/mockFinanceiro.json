@@ -1,0 +1,32 @@
+[
+    {
+        "aluno": "NOME",
+        "Nº matricula": "042289",
+        "filtrar": [
+            {
+                "filtrar":[
+                    {"selecionar mes": "Janeiro"},
+                    {"selecionar mes":"Fevereiro"},
+                    {"selecionar mes":"Março"},
+                    {"selecionar mes":"Abril"},
+                    {"selecionar mes":"Maio"},
+                    {"selecionar mes":"Junho"},
+                    {"selecionar mes":"Julho"},
+                    {"selecionar mes":"Agosto"},
+                    {"selecionar mes":"Setembro"},
+                    {"selecionar mes":"Outubro"},
+                    {"selecionar mes":"Novembro"},
+                    {"selecionar mes":"Dezembro"}
+                ]
+            }
+        ]
+    },
+    {
+        "preencha seu CPF": ""
+        
+    },
+    {
+        "email": ""
+        
+    }
+]

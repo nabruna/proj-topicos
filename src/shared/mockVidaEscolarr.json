@@ -1,0 +1,45 @@
+
+[
+    {
+        "aluno": "NOME E SOBRENOME",
+        "datas das faltas": "05/03",
+        "qtd": "1"
+    },
+
+
+
+    { "aluno": "NOME SOBRENOME",
+      "": [
+        {
+          "": [
+            { "n1": 5 },
+            { "n2": 7 },
+            { "n3": 8.5 },
+            { "n4": 6.5 },
+            { "média": 7.7}
+          ],
+          "media gereal": "7.7"
+        }
+        ]
+    },
+
+    { "aluno": "NOME SOBRENOME",
+        "": [
+          {
+            "": [
+              { "n1": 5 },
+              { "n2": 7 },
+              { "n3": 8.5 },
+              { "n4": 6.5 },
+              { "média": 7.7},
+              {"filtrar": "n.1"}
+            ]
+          }
+          ]
+      },
+
+
+        { "aluno": "NOME SOBRENOME",
+            "faltas atuais": "2" 
+        }
+]
