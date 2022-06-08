@@ -14,14 +14,7 @@
             { "prova4": 6.5 }
           ],
           "status": "Aprovada",
-          "faltas": [
-            {
-              "valor": 1
-            },
-            {
-              "valor": 1
-            }
-          ]
+          "faltas": 1
         },
         {
           "nomeMateria": "Matemática",
@@ -32,11 +25,7 @@
             { "prova4": 7 }
           ],
           "status": "Aprovada",
-          "faltas": [
-            {
-              "valor": 1
-            }
-          ]
+          "faltas": 2
         },
         {
           "nomeMateria": "Português",
@@ -47,11 +36,7 @@
             { "prova4": 6.5 }
           ],
           "status": "Aprovada",
-          "faltas": [
-            {
-              "valor": 1
-            }
-          ]
+          "faltas": 1
         },
         {
           "nomeMateria": "História",
@@ -62,11 +47,7 @@
             { "prova4": 8.5 }
           ],
           "status": "Aprovada",
-          "faltas": [
-            {
-              "valor": 1
-            }
-          ]
+          "faltas": 1
         },
         {
           "nomeMateria": "Geografia",
@@ -77,11 +58,7 @@
             { "prova4": 6 }
           ],
           "status": "Aprovada",
-          "faltas": [
-            {
-              "valor": 1
-            }
-          ]
+          "faltas": 1
         },
         {
           "nomeMateria": "Física",
@@ -92,11 +69,7 @@
             { "prova4": 8 }
           ],
           "status": "Aprovada",
-          "faltas": [
-            {
-              "valor": 1
-            }
-          ]
+          "faltas": 1
         }
       ],
       "atividades": [
@@ -118,14 +91,7 @@
             { "prova4": 6.5 }
           ],
           "status": "Aprovada",
-          "faltas": [
-            {
-              "valor": 1
-            },
-            {
-              "valor": 1
-            }
-          ]
+          "faltas": 1
         },
         {
           "nomeMateria": "Matemática",
@@ -136,11 +102,7 @@
             { "prova4": 7 }
           ],
           "status": "Aprovada",
-          "faltas": [
-            {
-              "valor": 1
-            }
-          ]
+          "faltas": 1
         },
         {
           "nomeMateria": "Português",
@@ -151,11 +113,7 @@
             { "prova4": 6.5 }
           ],
           "status": "Aprovada",
-          "faltas": [
-            {
-              "valor": 1
-            }
-          ]
+          "faltas": 1
         },
         {
           "nomeMateria": "História",
@@ -166,11 +124,7 @@
             { "prova4": 8.5 }
           ],
           "status": "Aprovada",
-          "faltas": [
-            {
-              "valor": 1
-            }
-          ]
+          "faltas": 1
         },
         {
           "nomeMateria": "Geografia",
@@ -181,11 +135,7 @@
             { "prova4": 6 }
           ],
           "status": "Aprovada",
-          "faltas": [
-            {
-              "valor": 1
-            }
-          ]
+          "faltas": 1
         },
         {
           "nomeMateria": "Física",
@@ -196,11 +146,7 @@
             { "prova4": 8 }
           ],
           "status": "Aprovada",
-          "faltas": [
-            {
-              "valor": 1
-            }
-          ]
+          "faltas": 1
         }
       ],
       "atividades": [

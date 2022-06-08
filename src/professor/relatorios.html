@@ -19,7 +19,8 @@
       src="https://www.gstatic.com/charts/loader.js"
     ></script>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
-    <script src="./scriptRelatorios.js"></script>
+    <script src="./scriptNomes.js"></script>
+    <script src="./scriptFaltas.js"></script>
   </head>
 
   <body>
@@ -98,12 +99,12 @@
           <h2>Relatórios</h2>
           <div class="row mx-auto w-50 my-4">
             <div class="input-group col">
-              <label class="input-group-text" for="selecionarDia">Dia</label>
+              <label class="input-group-text" for="selecionarDia">Turma</label>
               <select class="form-select" id="selecionarDia">
-                <option value="1">Segunda</option>
-                <option value="2">Terça</option>
-                <option value="2">Quarta</option>
-                <option value="2">Quinta</option>
+                <option value="8b">8 B</option>
+                <option value="8c">8 C</option>
+                <option value="8d">8 D</option>
+                <option value="8e">8 E</option>
               </select>
             </div>
             <span class="col-auto">
@@ -125,30 +126,18 @@
             </div>
 
             <div class="col-4">
-              <h3>Presenças</h3>
+              <h3>Faltas</h3>
               <hr />
               <table class="table">
                 <thead>
                   <tr>
                     <th scope="col">Aluno</th>
-                    <th scope="col">Datas das faltas</th>
-                    <th scope="col">Qtd</th>
+                    <th scope="col">Faltas</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Alice Ventura</th>
-                    <td>05/03</td>
-                    <td>1</td>
-                  </tr>
+                <tbody id="faltasAlunos">
+                  
                 </tbody>
-                <tfoot>
-                  <tr>
-                    <th scope="row">Total</th>
-                    <td></td>
-                    <td>1</td>
-                  </tr>
-                </tfoot>
               </table>
             </div>
 
