@@ -19,8 +19,7 @@
       src="https://www.gstatic.com/charts/loader.js"
     ></script>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
-    <script src="./scriptNomes.js"></script>
-    <script src="./scriptFaltas.js"></script>
+    <script src="./scriptRelatorios.js"></script>
   </head>
 
   <body>
@@ -112,8 +111,8 @@
             </span>
           </div>
 
-          <div class="row">
-            <div class="col-4">
+          <div class="row m-3">
+            <!-- <div class="col-4">
               <div class="mb-2">
                 <h3 class="ps-2">Alunos</h3>
                 <hr />
@@ -125,14 +124,20 @@
               </div>
             </div>
 
-            <div class="col-4">
-              <h3>Faltas</h3>
+            <div class="col-4"> -->
+              <h3>Turma <span id="turmaNome"></span></h3>
               <hr />
               <table class="table">
                 <thead>
                   <tr>
-                    <th scope="col">Aluno</th>
+                    <th scope="col">Alunos</th>
                     <th scope="col">Faltas</th>
+                    <th scope="col">N1</th>
+                    <th scope="col">N2</th>
+                    <th scope="col">N3</th>
+                    <th scope="col">N4</th>
+                    <th scope="col">Média</th>
+                    <th scope="col">Status</th>
                   </tr>
                 </thead>
                 <tbody id="faltasAlunos">
@@ -140,7 +145,7 @@
                 </tbody>
               </table>
             </div>
-
+<!-- 
             <div class="col-4">
               <h3>Notas</h3>
               <hr />
@@ -176,8 +181,8 @@
                   </tr>
                 </tfoot>
               </table>
-            </div>
-          </div>
+            </div> -->
+          <!-- </div> -->
         </div>
       </div>
     </div>
