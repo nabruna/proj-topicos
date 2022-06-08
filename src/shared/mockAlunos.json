@@ -1,0 +1,212 @@
+{
+  "alunos": [
+    {
+      "nome": "Alice Ventura",
+      "responsavel": "Jane Ventura",
+      "turma": "8 B",
+      "materias": [
+        {
+          "nomeMateria": "Biologia",
+          "notas": [
+            { "prova1": 5 },
+            { "prova2": 7 },
+            { "prova3": 8.5 },
+            { "prova4": 6.5 }
+          ],
+          "status": "Aprovada",
+          "faltas": [
+            {
+              "valor": 1
+            },
+            {
+              "valor": 1
+            }
+          ]
+        },
+        {
+          "nomeMateria": "Matemática",
+          "notas": [
+            { "prova1": 6 },
+            { "prova2": 8 },
+            { "prova3": 9.5 },
+            { "prova4": 7 }
+          ],
+          "status": "Aprovada",
+          "faltas": [
+            {
+              "valor": 1
+            }
+          ]
+        },
+        {
+          "nomeMateria": "Português",
+          "notas": [
+            { "prova1": 5.5 },
+            { "prova2": 9 },
+            { "prova3": 7.5 },
+            { "prova4": 6.5 }
+          ],
+          "status": "Aprovada",
+          "faltas": [
+            {
+              "valor": 1
+            }
+          ]
+        },
+        {
+          "nomeMateria": "História",
+          "notas": [
+            { "prova1": 7 },
+            { "prova2": 8 },
+            { "prova3": 9 },
+            { "prova4": 8.5 }
+          ],
+          "status": "Aprovada",
+          "faltas": [
+            {
+              "valor": 1
+            }
+          ]
+        },
+        {
+          "nomeMateria": "Geografia",
+          "notas": [
+            { "prova1": 5 },
+            { "prova2": 9 },
+            { "prova3": 7.5 },
+            { "prova4": 6 }
+          ],
+          "status": "Aprovada",
+          "faltas": [
+            {
+              "valor": 1
+            }
+          ]
+        },
+        {
+          "nomeMateria": "Física",
+          "notas": [
+            { "prova1": 5 },
+            { "prova2": 6 },
+            { "prova3": 7.5 },
+            { "prova4": 8 }
+          ],
+          "status": "Aprovada",
+          "faltas": [
+            {
+              "valor": 1
+            }
+          ]
+        }
+      ],
+      "atividades": [
+        { "nomeAtividade": "Fotografia" },
+        { "nomeAtividade": "Francês" }
+      ]
+    },
+    {
+      "nome": "Alex Campos",
+      "responsavel": "Carlos Campos",
+      "turma": "8 B",
+      "materias": [
+        {
+          "nomeMateria": "Biologia",
+          "notas": [
+            { "prova1": 5 },
+            { "prova2": 7 },
+            { "prova3": 8.5 },
+            { "prova4": 6.5 }
+          ],
+          "status": "Aprovada",
+          "faltas": [
+            {
+              "valor": 1
+            },
+            {
+              "valor": 1
+            }
+          ]
+        },
+        {
+          "nomeMateria": "Matemática",
+          "notas": [
+            { "prova1": 6 },
+            { "prova2": 8 },
+            { "prova3": 9.5 },
+            { "prova4": 7 }
+          ],
+          "status": "Aprovada",
+          "faltas": [
+            {
+              "valor": 1
+            }
+          ]
+        },
+        {
+          "nomeMateria": "Português",
+          "notas": [
+            { "prova1": 5.5 },
+            { "prova2": 9 },
+            { "prova3": 7.5 },
+            { "prova4": 6.5 }
+          ],
+          "status": "Aprovada",
+          "faltas": [
+            {
+              "valor": 1
+            }
+          ]
+        },
+        {
+          "nomeMateria": "História",
+          "notas": [
+            { "prova1": 7 },
+            { "prova2": 8 },
+            { "prova3": 9 },
+            { "prova4": 8.5 }
+          ],
+          "status": "Aprovada",
+          "faltas": [
+            {
+              "valor": 1
+            }
+          ]
+        },
+        {
+          "nomeMateria": "Geografia",
+          "notas": [
+            { "prova1": 5 },
+            { "prova2": 9 },
+            { "prova3": 7.5 },
+            { "prova4": 6 }
+          ],
+          "status": "Aprovada",
+          "faltas": [
+            {
+              "valor": 1
+            }
+          ]
+        },
+        {
+          "nomeMateria": "Física",
+          "notas": [
+            { "prova1": 5 },
+            { "prova2": 6 },
+            { "prova3": 7.5 },
+            { "prova4": 8 }
+          ],
+          "status": "Aprovada",
+          "faltas": [
+            {
+              "valor": 1
+            }
+          ]
+        }
+      ],
+      "atividades": [
+        { "nomeAtividade": "Fotografia" },
+        { "nomeAtividade": "Francês" }
+      ]
+    }
+  ]
+}

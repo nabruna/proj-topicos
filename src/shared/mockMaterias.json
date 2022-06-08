@@ -1,29 +1,20 @@
 [
-    {
-        "materia": "Biologia",
-        "professor": "NOME SOBRENOME",
-        "dia": "Segunda-feira",
-        "alunos": [
-            "NOME SOBRENOME",
-            "NOME SOBRENOME"
-        ]
-    },
-    {
-        "materia": "Matemática",
-        "professor": "NOME SOBRENOME",
-        "dia": "Terça-feira",
-        "alunos": [
-            "NOME SOBRENOME",
-            "NOME SOBRENOME"
-        ]
-    },
-    {
-        "materia": "Português",
-        "professor": "NOME SOBRENOME",
-        "dia": "Quarta-feira",
-        "alunos": [
-            "NOME SOBRENOME",
-            "NOME SOBRENOME"
-        ]
-    }
+  {
+    "materia": "Biologia",
+    "professor": "NOME SOBRENOME",
+    "dia": "Segunda-feira",
+    "alunos": ["NOME SOBRENOME", "NOME SOBRENOME"]
+  },
+  {
+    "materia": "Matemática",
+    "professor": "NOME SOBRENOME",
+    "dia": "Terça-feira",
+    "alunos": ["NOME SOBRENOME", "NOME SOBRENOME"]
+  },
+  {
+    "materia": "Português",
+    "professor": "NOME SOBRENOME",
+    "dia": "Quarta-feira",
+    "alunos": ["NOME SOBRENOME", "NOME SOBRENOME"]
+  }
 ]

@@ -1,6 +1,10 @@
-$.getJSON("../../mockRelatorios.json", function (data) {
-  $.each(data.products, function (i, aluno) {
-    content = "<li class='list-group-item'>" + aluno.nome + "</li>";
-    $(content).appendTo("#product_list");
+$(document).ready(function () {
+  $.getJSON("../shared/mockAlunos.json", function (data) {
+    var aluno = "";
+    $.each(data, function (key, value) {
+      aluno += "<li class='list-group-item'>" + value[0].nome + "</li>";
+      aluno += "<li class='list-group-item'>" + value[1].nome + "</li>";
+    });
+    $("#listaAlunos").append(aluno);
   });
 });
