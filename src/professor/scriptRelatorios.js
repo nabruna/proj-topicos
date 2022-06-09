@@ -2,7 +2,7 @@ $(document).ready(function () {
   $.getJSON("../shared/mockAlunos.json", function (data) {
     var relatorios = "";
     $.each(data.alunos, function (i, value) {
-        relatorios += "<tr></tr><td>" + value.nome + "</td>"
+        relatorios += "<tr><td>" + value.nome + "</td>"
 
         var matematica = value.materias[1];
 
@@ -24,7 +24,7 @@ $(document).ready(function () {
           aprovacao = "<span class='text-success fw-bold'>Aprovado</span>";
         }
 
-        relatorios += "<td>" + aprovacao + "</td>"
+        relatorios += "<td>" + aprovacao + "</td></tr>"
     });
     $("#faltasAlunos").append(relatorios);
   });
