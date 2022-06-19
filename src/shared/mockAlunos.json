@@ -28,12 +28,12 @@
         {
           "nomeMateria": "Geografia",
           "notas": [5, 9, 7.9, 6],
-          "faltas": 1
+          "faltas": 2
         },
         {
           "nomeMateria": "Física",
           "notas": [5, 6, 7.3, 8],
-          "faltas": 1
+          "faltas": 3
         }
       ],
       "atividades": [
@@ -49,32 +49,32 @@
         {
           "nomeMateria": "Biologia",
           "notas": [4, 5, 3.5, 7.6],
-          "faltas": 1
+          "faltas": 5
         },
         {
           "nomeMateria": "Matemática",
           "notas": [3, 2.5, 4.5, 6.5],
-          "faltas": 1
+          "faltas": 4
         },
         {
           "nomeMateria": "Português",
           "notas": [5.6, 7.5, 8.4, 5.8],
-          "faltas": 1
+          "faltas": 0
         },
         {
           "nomeMateria": "História",
           "notas": [6.7, 8.9, 7, 9.2],
-          "faltas": 1
+          "faltas": 0
         },
         {
           "nomeMateria": "Geografia",
           "notas": [9, 8.4, 6.5, 7.4],
-          "faltas": 1
+          "faltas": 3
         },
         {
           "nomeMateria": "Física",
           "notas": [4, 3.2, 2.5, 4.7],
-          "faltas": 1
+          "faltas": 2
         }
       ],
       "atividades": [
