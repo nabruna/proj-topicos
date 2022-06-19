@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="./scriptFrequencia.js"></script>
 </head>
 
 <body>
@@ -46,9 +48,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="frequencia.html">Frequência</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="notas.html">Notas</a>
-                    </li>
                 </ul>
                 <span class="navbar-text">
                     <button class="btn btn-danger" onclick="window.location.href='../index.html'">Logout</button>
@@ -69,22 +68,7 @@
             </div>
             <div class="col">
                 <h2>Adicionar faltas</h2>
-
-                <div class="row mx-auto w-50 my-4">
-                    <div class="input-group col">
-                        <label class="input-group-text" for="selecionarDia">Dia</label>
-                        <select class="form-select" id="selecionarDia">
-                            <option value="1">Segunda</option>
-                            <option value="2">Terça</option>
-                            <option value="2">Quarta</option>
-                            <option value="2">Quinta</option>
-                        </select>
-                    </div>
-                    <span class="col-auto">
-                        <button class="btn btn-outline-primary">Aplicar</button>
-                    </span>
-                </div>
-
+                
                     <table class="table table-hover m-2">
                         <thead>
                             <tr>
@@ -93,15 +77,15 @@
                                 <th scope="col">Adicionar ou remover</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody id="freqAlunos">
+                            <!-- <tr>
                                 <th scope="row">Angelina Vieira</th>
                                 <td><span id="numFaltas">0</span></td>
                                 <td>
                                     <button class="btn btn-outline-primary" onclick="adicionarFalta()">+</button>
                                     <button class="btn btn-outline-danger" onclick="removerFalta()">-</button>
                                 </td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
 
