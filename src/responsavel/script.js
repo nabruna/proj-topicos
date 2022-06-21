@@ -44,3 +44,21 @@ function enviarMensagem() {
   document.getElementById("mensagemEnviada").innerHTML = mensagem;
   console.log(mensagem)
 }
+
+function cadastrarAtividade() {
+    var lista = document.getElementById("listaAtividades").innerHTML; // identificar elementos da DOM
+  
+    if (listaAtividades.length < 3) {
+      // limite de atividades extras = 3
+      var inputAtividade = document.getElementById("inputAtividade").value;
+  
+      lista = lista + '<li class="list-group-item">' + inputAtividade + "</li>"; // adiciona item à lista
+      document.getElementById("listaAtividades").innerHTML = lista; // altera o valor da lista de atividades com a nova atividade
+  
+      listaAtividades.push(inputAtividade);
+      document.getElementById("avisoCadastroSucesso").style.display = "initial"; // aparece cadastro sucesso
+    } else {
+      document.getElementById("avisoCadastroSucesso").style.display = "none"; // desaparece sucesso
+      document.getElementById("avisoCadastroFalha").style.display = "initial"; // aparece falha
+    }
+  }
