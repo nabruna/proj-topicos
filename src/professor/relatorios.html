@@ -1,176 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-scola | Professor | Relatórios</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-</head>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="./scriptRelatorios.js"></script>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light nav-prof">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <span class="align-middle">
-                    <span class="material-icons md-36">
-                        auto_stories
-                    </span>
-                </span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <span class="align-middle">
+            <span class="material-icons md-36"> auto_stories </span>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="relatorios.html">Relatórios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alunos.html">Alunos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registrar.html">Registrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="materiais.html">Materiais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="frequencia.html">Frequência</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <button
+              class="btn btn-danger"
+              onclick="window.location.href='../index.html'"
+            >
+              Logout
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="relatorios.html">Relatórios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="alunos.html">Alunos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="registrar.html">Registrar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="materiais.html">Materiais</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="frequencia.html">Frequência</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="notas.html">Notas</a>
-                    </li>
-                </ul>
-                <span class="navbar-text">
-                    <button class="btn btn-danger" onclick="window.location.href='../index.html'">Logout</button>
-                </span>
-            </div>
+          </span>
         </div>
+      </div>
     </nav>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-2 side-nav prof-bg">
-                <h2>Disciplinas</h2>
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action prof-active" aria-current="true">
-                        Matemática
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">Matemática avançada</a>
-                </div>
-            </div>
-            <div class="col">
-                <h2>Relatórios</h2>
-                <div class="row mx-auto w-50 my-4">
-                    <div class="input-group col">
-                        <label class="input-group-text" for="selecionarDia">Dia</label>
-                        <select class="form-select" id="selecionarDia">
-                            <option value="1">Segunda</option>
-                            <option value="2">Terça</option>
-                            <option value="2">Quarta</option>
-                            <option value="2">Quinta</option>
-                        </select>
-                    </div>
-                    <span class="col-auto">
-                        <button class="btn btn-outline-primary">Aplicar</button>
-                    </span>
-                </div>
-
-                <div class="row">
-                    <div class="col-4">
-                        <div class="mb-2">
-                            <h3 class="ps-2">Alunos</h3>
-                            <hr>
-                            <ul class="list-group list-group-flush" id="listaAlunos">
-                            </ul>
-                        </div>
-
-                        <div class="text-end">
-                            <a href="#" class="link-primary">Limpar todos</a>
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <h3>Presenças</h3>
-                        <hr>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Aluno</th>
-                                    <th scope="col">Datas das faltas</th>
-                                    <th scope="col">Qtd</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Alice Ventura</th>
-                                    <td>05/03</td>
-                                    <td>1</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th scope="row">Total</th>
-                                    <td></td>
-                                    <td>1</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-
-                    <div class="col-4">
-                        <h3>Notas</h3>
-                        <hr>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Aluno</th>
-                                    <th scope="col">N1</th>
-                                    <th scope="col">N2</th>
-                                    <th scope="col">N3</th>
-                                    <th scope="col">N4</th>
-                                    <th scope="col">Média</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Alice Ventura</th>
-                                    <td>7.3</td>
-                                    <td>8.2</td>
-                                    <td>n/a</td>
-                                    <td>n/a</td>
-                                    <td>7.7</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th scope="row">Média geral</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>7.7</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </div>
-
-
-
-
-            </div>
+      <div class="row">
+        <div class="col-lg-2 side-nav prof-bg">
+          <h2>Disciplinas</h2>
+          <div class="list-group">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action prof-active"
+              aria-current="true"
+            >
+              Matemática
+            </a>
+            <a href="#" class="list-group-item list-group-item-action"
+              >Matemática avançada</a
+            >
+          </div>
         </div>
-    </div>
-</body>
+        <div class="col">
+          <h2>Relatórios</h2>
+          <div class="row mx-auto w-50 my-4">
+            <div class="input-group col">
+              <label class="input-group-text" for="selecionarDia">Turma</label>
+              <select class="form-select" id="selecionarDia">
+                <option value="8b">8 B</option>
+                <option value="8c">8 C</option>
+                <option value="8d">8 D</option>
+                <option value="8e">8 E</option>
+              </select>
+            </div>
+            <span class="col-auto">
+              <button class="btn btn-outline-primary">Aplicar</button>
+            </span>
+          </div>
 
+          <div class="row m-3">
+            <h3>Turma <span id="turmaNome"></span></h3>
+            <hr />
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Alunos</th>
+                  <th scope="col">Faltas</th>
+                  <th scope="col">N1</th>
+                  <th scope="col">N2</th>
+                  <th scope="col">N3</th>
+                  <th scope="col">N4</th>
+                  <th scope="col">Média</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody id="faltasAlunos"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

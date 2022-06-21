@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js">
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="./scriptAlunos.js"></script>
     </script>
 </head>
 
@@ -47,9 +48,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="frequencia.html">Frequência</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="notas.html">Notas</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
@@ -91,55 +89,12 @@
                         <thead>
                             <tr>
                                 <th scope="col">Nome</th>
-                                <th scope="col">Matérias e dias</th>
+                                <th scope="col">Matérias</th>
                                 <th scope="col">Atividades extras</th>
                                 <th scope="col">Responsável</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Alice Franco
-                                    <a href="mailto:alicefranco@escola.com"><img src="../assets/email.svg"
-                                            alt="Email"></a>
-                                    <a href="tel:+554197686756"><img src="../assets/sms.svg" alt="SMS"></a>
-                                </th>
-                                <td>
-                                    <div class="row">
-                                        <div class="col">
-                                            <ul class="list-group">
-                                                <li class="list-group-item">Português</li>
-                                                <li class="list-group-item">Matemática</li>
-                                                <li class="list-group-item">Filosofia</li>
-                                                <li class="list-group-item">Sociologia</li>
-                                                <li class="list-group-item">Física</li>
-                                                <li class="list-group-item">Química</li>
-                                                <li class="list-group-item">Educação Física</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col">
-                                            <ul class="list-group">
-                                                <li class="list-group-item">Segunda</li>
-                                                <li class="list-group-item">Quarta</li>
-                                                <li class="list-group-item">Terça</li>
-                                                <li class="list-group-item">Terça</li>
-                                                <li class="list-group-item">Quinta</li>
-                                                <li class="list-group-item">Quinta</li>
-                                                <li class="list-group-item">Sexta</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <li class="list-group-item">Dança de salão</li>
-                                    <li class="list-group-item">Vôlei</li>
-                                </td>
-                                <td>
-                                    Maria Cristina Franco
-                                    <a href="mailto:mariacrisfranco@paisescola.com"><img src="../assets/email.svg"
-                                            alt="Email"></a>
-                                    <a href="tel:+554198786758"><img src="../assets/sms.svg" alt="SMS"></a>
-                                </td>
-                            </tr>
+                        <tbody id="dadosAlunos">
                         </tbody>
                     </table>
                 </div>

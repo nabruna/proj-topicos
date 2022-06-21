@@ -1,0 +1,86 @@
+{
+  "alunos": [
+    {
+      "nome": "Alice Ventura",
+      "responsavel": "Jane Ventura",
+      "turma": "8 B",
+      "materias": [
+        {
+          "nomeMateria": "Biologia",
+          "notas": [5, 7, 8.2, 6.5],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "Matemática",
+          "notas": [6, 8, 9.1, 7],
+          "faltas": 2
+        },
+        {
+          "nomeMateria": "Português",
+          "notas": [5.4, 9, 7.8, 6.9],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "História",
+          "notas": [7, 8, 9, 8.7],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "Geografia",
+          "notas": [5, 9, 7.9, 6],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "Física",
+          "notas": [5, 6, 7.3, 8],
+          "faltas": 1
+        }
+      ],
+      "atividades": [
+        { "nomeAtividade": "Fotografia" },
+        { "nomeAtividade": "Francês" }
+      ]
+    },
+    {
+      "nome": "Alex Campos",
+      "responsavel": "Carlos Campos",
+      "turma": "8 B",
+      "materias": [
+        {
+          "nomeMateria": "Biologia",
+          "notas": [4, 5, 3.5, 7.6],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "Matemática",
+          "notas": [3, 2.5, 4.5, 6.5],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "Português",
+          "notas": [5.6, 7.5, 8.4, 5.8],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "História",
+          "notas": [6.7, 8.9, 7, 9.2],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "Geografia",
+          "notas": [9, 8.4, 6.5, 7.4],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "Física",
+          "notas": [4, 3.2, 2.5, 4.7],
+          "faltas": 1
+        }
+      ],
+      "atividades": [
+        { "nomeAtividade": "Fotografia" },
+        { "nomeAtividade": "Francês" }
+      ]
+    }
+  ]
+}
