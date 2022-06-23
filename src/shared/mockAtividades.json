@@ -1,27 +1,25 @@
-[
-  {
-    "atividades": [
-      {
-        "nome": "Aula de piano",
-        "dia": "Sexta-feira",
-        "horario": "19h",
-        "local": "Auditório A",
-        "valor": 80
-      },
-      {
-        "nome": "Futebol",
-        "dia": "Quarta-feira",
-        "horario": "16h",
-        "local": "Quadra C",
-        "valor": 80
-      },
-      {
-        "nome": "Clube de xadrez",
-        "dia": "Segunda-feira",
-        "horario": "17h",
-        "local": "Sala 5",
-        "valor": 80
-      }
-    ]
-  }
-]
+{
+  "atividades": [
+    {
+      "nome": "Aula de piano",
+      "dia": "Sexta-feira",
+      "horario": "19h",
+      "local": "Auditório A",
+      "valor": 320
+    },
+    {
+      "nome": "Futebol",
+      "dia": "Quarta-feira",
+      "horario": "16h",
+      "local": "Quadra C",
+      "valor": 160
+    },
+    {
+      "nome": "Clube de xadrez",
+      "dia": "Segunda-feira",
+      "horario": "17h",
+      "local": "Sala 5",
+      "valor": 200
+    }
+  ]
+}
