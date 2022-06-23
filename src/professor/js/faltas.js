@@ -4,9 +4,31 @@ const renderMaterias = async () => {
   const form = document.querySelector("form");
   const res = await fetch("http://localhost:3000/alunos/" + id);
   const aluno = await res.json();
-  
+
   const dadosAluno = document.getElementById("dadosAluno");
   const materias = document.getElementById("materias");
+
+  var card = `
+    <strong>Nome:</strong> ${aluno.nome}<br>
+    <strong>Turma:</strong> ${aluno.turma}<br>
+    <strong>Matérias e faltas:</strong>`;
+
+  if (aluno.materias.length == 0) {
+    card += "N/A";
+  } else {
+    for (let i = 0; i < aluno.materias.length; i++) {
+      let itemMateria = "";
+      if (aluno.materias[i].faltas == undefined || aluno.materias[i].faltas == null) {
+        itemMateria += `${aluno.materias[i].nomeMateria}: 0<br>`;
+      } else {
+        itemMateria += `${aluno.materias[i].nomeMateria}: ${aluno.materias[i].faltas}<br>`;
+      }
+      card += itemMateria;
+    }
+  }
+
+  dadosAluno.innerHTML = card;
+
 
   var options = `
   <option selected>Selecionar matéria</option>`;

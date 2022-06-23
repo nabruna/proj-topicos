@@ -8,12 +8,7 @@
       "materias": [
         {
           "nomeMateria": "Biologia",
-          "notas": [
-            "5",
-            "8",
-            "9.5",
-            "9"
-          ]
+          "faltas": "2"
         }
       ],
       "atividades": [
@@ -109,11 +104,14 @@
       "materias": [
         {
           "nomeMateria": "Português",
-          "notas": [],
-          "faltas": 0
+          "faltas": "1"
         }
       ],
-      "atividades": []
+      "atividades": [
+        {
+          "nomeAtividade": "RPG"
+        }
+      ]
     },
     {
       "nome": "Beatriz Leite",
@@ -122,8 +120,7 @@
       "materias": [
         {
           "nomeMateria": "Alemão",
-          "notas": [],
-          "faltas": 0
+          "faltas": "2"
         }
       ],
       "atividades": [
@@ -132,6 +129,59 @@
         }
       ],
       "id": 4
+    },
+    {
+      "nome": "Ana Vitoria Valois",
+      "responsavel": "Elza Barão",
+      "turma": "8 D",
+      "materias": [
+        {
+          "nomeMateria": "Biologia",
+          "faltas": "2"
+        }
+      ],
+      "atividades": [
+        {
+          "nomeAtividade": "RPG"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "nome": "Gabs",
+      "responsavel": "Caroline",
+      "turma": "11 A",
+      "materias": [
+        {
+          "nomeMateria": "Matemática",
+          "notas": [],
+          "faltas": 0
+        }
+      ],
+      "atividades": [
+        {
+          "nomeAtividade": "Vôlei"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "nome": "nome",
+      "responsavel": "res",
+      "turma": "7 A",
+      "materias": [
+        {
+          "nomeMateria": "Português",
+          "notas": [],
+          "faltas": 0
+        }
+      ],
+      "atividades": [
+        {
+          "nomeAtividade": "Futsal"
+        }
+      ],
+      "id": 7
     }
   ]
 }

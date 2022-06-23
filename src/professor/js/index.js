@@ -124,44 +124,32 @@ const renderPage = async () => {
 
   function gerarNotas(url) {
     var template = "";
-    var thead = "";
     var titulo = "<h1 class='mb-2 fw-bold'>Notas</h1>";
 
     alunos.forEach((aluno) => {
-      var button = `<a class="btn btn-outline-primary" href="/src/professor/notas.html?id=${aluno.id}">Alterar notas</a>`;
-      var card = "";
-
+      var button = `<a class="btn btn-outline-primary" href="/src/professor/faltas.html?id=${aluno.id}">Adicionar ou remover faltas</a>`;
       template += `
       <tr>
        <td>
         ${aluno.nome}
       </td>
-      <td>
-      <div class="card-group">`;
+      <td>`;
 
       for (let i = 0; i < aluno.materias.length; i++) {
-        card += `<div class="card mb-2" style="width: 18rem;">
-        <div class="card-header">${aluno.materias[i].nomeMateria}</div>
-        <ul class="list-group list-group-flush">`;
-
-        if (aluno.materias[i].notas.length == 0) {
-          card += `<li class="list-group-item">N/A</li>`;
+        let itemMateria = "";
+        if (aluno.materias[i].notas == null || aluno.materias[i].notas == undefined) {
+          itemMateria += "N/A"
         } else {
-          let itemMateria = "";
-          itemMateria += `
-        <li class="list-group-item"><strong>N1:</strong> ${aluno.materias[i].notas[0]}</li>
-        <li class="list-group-item"><strong>N2:</strong> ${aluno.materias[i].notas[1]}</li>
-        <li class="list-group-item"><strong>N3:</strong> ${aluno.materias[i].notas[2]}</li>
-        <li class="list-group-item"><strong>N4:</strong> ${aluno.materias[i].notas[3]}</li>`;
-          card += itemMateria;
-
-          card += "</ul></div>";
-        }
+        itemMateria += `<div class="row"><strong>${aluno.materias[i].nomeMateria}</strong>
+        <br>
+        <p>N1: ${aluno.materias[i].notas[0]}</p>
+        <p>N2: ${aluno.materias[i].notas[1]}</p>
+        <p>N3: ${aluno.materias[i].notas[2]}</p>
+        <p>N4: ${aluno.materias[i].notas[3]}</p>
+        </div>`;
       }
-      card += "</div>"
-
-      template += card;
-
+        template += itemMateria;
+      }
       template += `
       </td>
       <td>`;
@@ -175,7 +163,7 @@ const renderPage = async () => {
       `
     <table class="table">
     <thead>
-    <tr><th>Nome</th><th>Notas</th></tr>
+    <tr><th>Nome</th><th>Faltas</th><th>Ações</th></tr>
     </thead>
     <tbody>` +
       template +
@@ -185,9 +173,9 @@ const renderPage = async () => {
     main.innerHTML = titulo + tabela;
   }
 
-  btnNotas.onclick = () => {
-    gerarNotas("http://localhost:3000/alunos");
-  };
+  // btnNotas.onclick = () => {
+  //   gerarNotas("http://localhost:3000/alunos");
+  // };
 };
 
 window.addEventListener("DOMContentLoaded", () => renderPage());
