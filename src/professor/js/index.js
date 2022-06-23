@@ -7,6 +7,7 @@ const renderPage = async () => {
   var main = document.getElementsByTagName("main")[0];
   var btnAlunos = document.getElementById("btnAlunos");
   var btnFrequencia = document.getElementById("btnFrequencia");
+  var btnNotas = document.getElementById("btnNotas");
 
   function gerarTabela(url) {
     var template = "";
@@ -23,20 +24,30 @@ const renderPage = async () => {
       </td>
       <td>`;
 
-      for (let i = 0; i < aluno.materias.length; i++) {
-        let itemMateria = "";
-        itemMateria += `<li class="list-group-item">${aluno.materias[i].nomeMateria}</li>`;
-        template += itemMateria;
+      if (aluno.materias.length == 0) {
+        var button = `<a href="/src/professor/cadastrar_materia.html?id=${aluno.id}">Adicionar materias</a>`;
+        template += button;
+      } else {
+        for (let i = 0; i < aluno.materias.length; i++) {
+          let itemMateria = "";
+          itemMateria += `<li class="list-group-item">${aluno.materias[i].nomeMateria}</li>`;
+          template += itemMateria;
+        }
       }
 
       template += `
       </td>
       <td>`;
 
-      for (let i = 0; i < aluno.atividades.length; i++) {
-        let itemMateria = "";
-        itemMateria += `<li class="list-group-item">${aluno.atividades[i].nomeAtividade}</li>`;
-        template += itemMateria;
+      if (aluno.atividades.length == 0) {
+        var button = `<a href="/src/professor/cadastrar_atividade.html?id=${aluno.id}">Adicionar atividades</a>`;
+        template += button;
+      } else {
+        for (let i = 0; i < aluno.atividades.length; i++) {
+          let itemMateria = "";
+          itemMateria += `<li class="list-group-item">${aluno.atividades[i].nomeAtividade}</li>`;
+          template += itemMateria;
+        }
       }
       template += `
       </td>
@@ -68,9 +79,10 @@ const renderPage = async () => {
 
   function gerarFreq(url) {
     var template = "";
-    var titulo = "<h1 class='my-2 fw-bold'>Frequência</h1>";
+    var titulo = "<h1 class='mb-2 fw-bold'>Frequência</h1>";
 
     alunos.forEach((aluno) => {
+      var button = `<a class="btn btn-outline-primary" href="/src/professor/faltas.html?id=${aluno.id}">Adicionar ou remover faltas</a>`;
       template += `
       <tr>
        <td>
@@ -80,9 +92,13 @@ const renderPage = async () => {
 
       for (let i = 0; i < aluno.materias.length; i++) {
         let itemMateria = "";
-        itemMateria += `<li class="list-group-item">${aluno.materias[i].nomeMateria}: ${aluno.materias[i].faltas}</li>`;
+        itemMateria += `<div class="row">${aluno.materias[i].nomeMateria}: ${aluno.materias[i].faltas}</div>`;
         template += itemMateria;
       }
+      template += `
+      </td>
+      <td>`;
+      template += button;
       template += `
       </td>
       </tr>`;
@@ -92,7 +108,7 @@ const renderPage = async () => {
       `
     <table class="table">
     <thead>
-    <tr><th>Nome</th><th>Faltas</th></tr>
+    <tr><th>Nome</th><th>Faltas</th><th>Ações</th></tr>
     </thead>
     <tbody>` +
       template +
@@ -100,69 +116,77 @@ const renderPage = async () => {
     </table>`;
 
     main.innerHTML = titulo + tabela;
-
-    // main.innerHTML = "<h1 class='my-2 fw-bold'>Frequência</h1>";
-
-    // fetch(url)
-    //   .then((resposta) => {
-    //     return resposta.json();
-    //   })
-    //   .then((alunos) => {
-    //     listaDealunos = alunos;
-
-    //     //Código de geração da tabela
-    //     var table = document.createElement("table");
-    //     table.classList.add("table");
-
-    //     var thead = document.createElement("thead");
-    //     thead.innerHTML = "<tr><th>Nome</th><th>Faltas</th></tr>";
-    //     table.appendChild(thead);
-
-    //     var tbody = document.createElement("tbody");
-
-    //     var linhasTabela = alunos.length;
-
-    //     for (var i = 0; i < linhasTabela; i++) {
-    //       var tr = document.createElement("tr");
-    //       var aluno = alunos[i];
-
-    //       //Mostrar nome do aluno
-    //       var td = document.createElement("td");
-    //       var txt = document.createTextNode(aluno.nome);
-    //       td.appendChild(txt);
-    //       tr.appendChild(td);
-
-    //       //Mostrar lista de matérias
-    //       var td = document.createElement("td");
-    //       const listaMaterias = document.createElement("ul");
-    //       listaMaterias.classList.add("list-group");
-    //       for (let i = 0; i < aluno.materias.length; i++) {
-    //         const itemMateria = document.createElement("li");
-    //         itemMateria.classList.add("list-group-item");
-    //         var txt = document.createTextNode(aluno.materias[i].nomeMateria);
-    //         itemMateria.appendChild(txt);
-    //         var sp = document.createTextNode(": ");
-    //         itemMateria.appendChild(sp);
-    //         var num = document.createTextNode(aluno.materias[i].faltas);
-    //         itemMateria.appendChild(num);
-    //         listaMaterias.appendChild(itemMateria);
-    //         td.appendChild(listaMaterias);
-    //         tr.appendChild(td);
-    //       }
-
-    //       tr.appendChild(td);
-    //       tbody.appendChild(tr);
-    //     }
-
-    //     table.appendChild(tbody);
-
-    //     main.appendChild(table);
-    //   });
   }
 
   btnFrequencia.onclick = () => {
-    main.innerHTML = "";
     gerarFreq("http://localhost:3000/alunos");
+  };
+
+  function gerarNotas(url) {
+    var template = "";
+    var thead = "";
+    var titulo = "<h1 class='mb-2 fw-bold'>Notas</h1>";
+
+    alunos.forEach((aluno) => {
+      var button = `<a class="btn btn-outline-primary" href="/src/professor/notas.html?id=${aluno.id}">Alterar notas</a>`;
+      var card = "";
+
+      template += `
+      <tr>
+       <td>
+        ${aluno.nome}
+      </td>
+      <td>
+      <div class="card-group">`;
+
+      for (let i = 0; i < aluno.materias.length; i++) {
+        card += `<div class="card mb-2" style="width: 18rem;">
+        <div class="card-header">${aluno.materias[i].nomeMateria}</div>
+        <ul class="list-group list-group-flush">`;
+
+        if (aluno.materias[i].notas.length == 0) {
+          card += `<li class="list-group-item">N/A</li>`;
+        } else {
+          let itemMateria = "";
+          itemMateria += `
+        <li class="list-group-item"><strong>N1:</strong> ${aluno.materias[i].notas[0]}</li>
+        <li class="list-group-item"><strong>N2:</strong> ${aluno.materias[i].notas[1]}</li>
+        <li class="list-group-item"><strong>N3:</strong> ${aluno.materias[i].notas[2]}</li>
+        <li class="list-group-item"><strong>N4:</strong> ${aluno.materias[i].notas[3]}</li>`;
+          card += itemMateria;
+
+          card += "</ul></div>";
+        }
+      }
+      card += "</div>"
+
+      template += card;
+
+      template += `
+      </td>
+      <td>`;
+      template += button;
+      template += `
+      </td>
+      </tr>`;
+    });
+
+    var tabela =
+      `
+    <table class="table">
+    <thead>
+    <tr><th>Nome</th><th>Notas</th></tr>
+    </thead>
+    <tbody>` +
+      template +
+      `</tbody>
+    </table>`;
+
+    main.innerHTML = titulo + tabela;
+  }
+
+  btnNotas.onclick = () => {
+    gerarNotas("http://localhost:3000/alunos");
   };
 };
 

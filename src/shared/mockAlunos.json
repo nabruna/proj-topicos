@@ -9,62 +9,11 @@
         {
           "nomeMateria": "Biologia",
           "notas": [
-            5,
-            7,
-            8.2,
-            6.5
-          ],
-          "faltas": 1
-        },
-        {
-          "nomeMateria": "Matemática",
-          "notas": [
-            6,
-            8,
-            9.1,
-            7
-          ],
-          "faltas": 2
-        },
-        {
-          "nomeMateria": "Português",
-          "notas": [
-            5.4,
-            9,
-            7.8,
-            6.9
-          ],
-          "faltas": 1
-        },
-        {
-          "nomeMateria": "História",
-          "notas": [
-            7,
-            8,
-            9,
-            8.7
-          ],
-          "faltas": 1
-        },
-        {
-          "nomeMateria": "Geografia",
-          "notas": [
-            5,
-            9,
-            7.9,
-            6
-          ],
-          "faltas": 2
-        },
-        {
-          "nomeMateria": "Física",
-          "notas": [
-            5,
-            6,
-            7.3,
-            8
-          ],
-          "faltas": 3
+            "5",
+            "8",
+            "9.5",
+            "9"
+          ]
         }
       ],
       "atividades": [
@@ -157,15 +106,31 @@
       "nome": "Mario Lima",
       "responsavel": "Cristina Salgado",
       "turma": "8 C",
-      "materias": [],
+      "materias": [
+        {
+          "nomeMateria": "Português",
+          "notas": [],
+          "faltas": 0
+        }
+      ],
       "atividades": []
     },
     {
       "nome": "Beatriz Leite",
       "responsavel": "José Leite",
       "turma": "8 C",
-      "materias": [],
-      "atividades": [],
+      "materias": [
+        {
+          "nomeMateria": "Alemão",
+          "notas": [],
+          "faltas": 0
+        }
+      ],
+      "atividades": [
+        {
+          "nomeAtividade": "Futebol"
+        }
+      ],
       "id": 4
     }
   ]
