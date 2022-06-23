@@ -1,45 +1,112 @@
-
-[
+{
+  "alunos": [ 
     {
-        "aluno": "NOME E SOBRENOME",
-        "datas das faltas": "05/03",
-        "qtd": "1"
-    },
-
-
-
-    { "aluno": "NOME SOBRENOME",
-      "": [
+      "nome": "Angelina Vieira",
+      "responsavel": "Jane Ventura",
+      "matricula": "357903",
+      "mensal": "R$450,00",
+      "turma": "8 B",
+      "materias": [
         {
-          "": [
-            { "n1": 5 },
-            { "n2": 7 },
-            { "n3": 8.5 },
-            { "n4": 6.5 },
-            { "média": 7.7}
-          ],
-          "media gereal": "7.7"
+          "nomeMateria": "Português",
+          "notas": [5.4, 9, 7.8, 6.9],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "História",
+          "notas": [7, 8, 9, 8.7],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "Geografia",
+          "notas": [5, 9, 7.9, 6],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "Física",
+          "notas": [5, 6, 7.3, 8],
+          "faltas": 1
         }
-        ]
-    },
+      ],
+      "atividadesMat": [
+        { "nomeAtividade": "Subtração" },
+        { "nomeAtividade": "Logica" },
+        { "nomeAtividade": "Algebra" },
+        { "nomeAtividade": "Raiz quadrada" }
+      ],
+      "atividadesBio": [
+        { "nomeAtividade": "Ecologia" },
+        { "nomeAtividade": "Anatomia" },
+        { "nomeAtividade": "Evolução" },
+        { "nomeAtividade": "Genetica" }
+      ],
+      "atividadesGeo": [
+        { "nomeAtividade": "Geopolitica" },
+        { "nomeAtividade": "Clima" },
+        { "nomeAtividade": "Territorio Brasileiro" },
+        { "nomeAtividade": "Relevo" }
+      ],
+      "atividadesPort": [
+        { "nomeAtividade": "Interpretação de texto" },
+        { "nomeAtividade": "Variação linguistica" },
+        { "nomeAtividade": "Generos Textuais" },
+        { "nomeAtividade": "Figuras de linguagem" }
+      ],
+      "atividadesHist": [
+        { "nomeAtividade": "Revolução Industrial" },
+        { "nomeAtividade": "Era Vargas" },
+        { "nomeAtividade": "Guerra Fria" },
+        { "nomeAtividade": "Ditadura" }
+      ],
+      "atividadesIng": [
+        { "nomeAtividade": "Listen, Read, Writer" },
+        { "nomeAtividade": "Speak" }
+      ]
 
-    { "aluno": "NOME SOBRENOME",
-        "": [
-          {
-            "": [
-              { "n1": 5 },
-              { "n2": 7 },
-              { "n3": 8.5 },
-              { "n4": 6.5 },
-              { "média": 7.7},
-              {"filtrar": "n.1"}
-            ]
-          }
-          ]
-      },
+    }
 
+    
+  ],
 
-        { "aluno": "NOME SOBRENOME",
-            "faltas atuais": "2" 
+  "materia": [ 
+    {
+      "materias": [
+        {
+          "nomeMateria": "Biologia",
+          "assunto": "Celulas"
+        },
+        {
+          "nomeMateria": "Matemática",
+          "notas": [ 8, 9, 7.8, 6.9],
+          "faltas": 2
+        },
+        {
+          "nomeMateria": "Português",
+          "notas": [5.4, 9, 7.8, 6.9],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "História",
+          "notas": [7, 8, 9, 8.7],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "Geografia",
+          "notas": [5, 9, 7.9, 6],
+          "faltas": 1
+        },
+        {
+          "nomeMateria": "Física",
+          "notas": [5, 6, 7.3, 8],
+          "faltas": 1
         }
-]
+      ],
+      "atividades": [
+        { "nomeAtividade": "Fotografia" },
+        { "nomeAtividade": "Francês" }
+      ]
+    }
+  ]
+}
+
+

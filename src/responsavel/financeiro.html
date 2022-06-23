@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="./scripts/scriptFinan.js"></script>
+
 </head>
 
 <body>
@@ -70,15 +74,15 @@
                             <tr>
                                 <th scope="col">Aluno</th>
                                 <th scope="col">Nº matricula</th>
-                                <th scope="col">Filtrar</th>
+                                <th scope="col">Valor Mensal</th>
+        
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="finan"></tbody>
                             <tr>
-                                <th scope="row">Angelina Vieira</th>
-                                <td>042289</td>
+                                
                                 <td>
-                                    <div class="row">
+                                    <div class="row mb-10 mx-5">
                                         <div class="input-group col">
                                             <label class="input-group-text" for="selecionarProva">Selecionar mês</label>
                                             <select class="form-select" id="selecionarProva">

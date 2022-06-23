@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="../assets/calen.png"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -60,14 +64,35 @@
               <ul>
                   <li>coisa</li>
                   <li>coisa</li>
+                  <input type="text" id="calendario" ></p>
               </ul>
             </div>
             <div class="col">
-              Column
+              
+
+
+
+
             </div>
         </div>
     </div>
+
+    <script>
+      $(function() {
+    $( "#calendario" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        buttinImage: "calen.png",
+        showButtonPanel:true
+        
+    });
+});
+        </script>
+
+
+
+    
 </body>
 
 </html>
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed eligendi eos cupiditate. Quo voluptatem animi corrupti eaque, autem sint assumenda ducimus sit, consequuntur ut labore dolor, aperiam vitae ullam laboriosam? Molestias odit perspiciatis magni fugit quaerat nesciunt itaque vitae quidem ipsam aspernatur aliquam, minus ipsa eius, officiis delectus culpa fuga, molestiae harum?
+
