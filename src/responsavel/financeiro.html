@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="./scripts/scriptFinan.js"></script>
+
 </head>
 
 <body>
@@ -58,18 +62,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <!--<div class="col-lg-2 side-nav pais-bg">
-                <h2>Matricular criança</h2>
-                <div class="list-group">
-                    <a href="#id-matricula" class="list-group-item list-group-item-action pais-active" aria-current="true" >
-                        Ano letivo
-                    </a>
-                    <a href="#id-ativ" class="list-group-item list-group-item-action">Atividades extras</a>
-                    <a href="#id-hr" class="list-group-item list-group-item-action">Horarios</a>
-                   
-                </div>
-
-            </div>0-->
+            
             
             <div class="col">
                 <div class="row">
@@ -81,15 +74,15 @@
                             <tr>
                                 <th scope="col">Aluno</th>
                                 <th scope="col">Nº matricula</th>
-                                <th scope="col">Filtrar</th>
+                                <th scope="col">Valor Mensal</th>
+        
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="finan"></tbody>
                             <tr>
-                                <th scope="row">Angelina Vieira</th>
-                                <td>042289</td>
+                                
                                 <td>
-                                    <div class="row">
+                                    <div class="row mb-10 mx-5">
                                         <div class="input-group col">
                                             <label class="input-group-text" for="selecionarProva">Selecionar mês</label>
                                             <select class="form-select" id="selecionarProva">
@@ -126,9 +119,9 @@
                                 <div class="row mb-3 mx-3">
                     
                                 <label for="cpf" class="text-start form-label fw-bold">Preencha seu CPF:</label>
-                                    <input type="cpf" data-type="cpf" class="form-control" placeholder="***********"
-                                        aria-label="insira seu CPF" required>
-                                        <button type="submit" class="btn btn-outline-success my-4" onclick="checarCPFrepedito()">Confirmar</button>
+                                    <input type="number"  class="form-control" placeholder="apenas números"
+                                        aria-label="insira seu CPF" pattern="[0-9]+$">
+                                        <button type="submit" class="btn btn-outline-success my-4" onclick="validarCPF()">Confirmar</button>
                                 </div>
                                 
                                 <h4>Escolha o metodo para envio da fatura</h4>
@@ -152,23 +145,7 @@
         </div>
     </div>
 
-    <script> function alertaFunc() { 
-        alert("Tem certeza? Não é possivel desfazer o envio!");
-        }
-
-        //function sair(){
-        //if (confirm('Tem certeza que deseja sair desta página?')) {
-          //  closeSession();
-          //  location.href='../index.html';
-       // }
-   // }
-
-    function saida(link) {
-    if (confirm('Tem certeza que deseja sair da páginaaaaaa?'))
-        link.name = 1;
-    }
-
-</script>
+    
 
 </body>
 </html>

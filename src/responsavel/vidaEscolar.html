@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="./scripts/scriptVidaEscolar.js"></script>
+
 </head>
 
 <body>
@@ -47,6 +50,7 @@
                         <a class="nav-link" href="contactProf.html">Contato com professores</a>
                     </li>
                 </ul>
+                
                 <span class="navbar-text">
                     <button class="btn btn-danger" onclick="window.location.href='../index.html'">Logout</button>
                 </span>
@@ -66,27 +70,10 @@
                     <a href="#id-frequencia" class="list-group-item list-group-item-action">Frequência</a>
                 </div>
             </div>
+
+            
+
             <div class="col">
-                <h2>
-
-        
-                </h2>
-                <!--<h2>Dados da Criança</h2>
-                <div class="row mx-auto w-50 my-4">
-                    <div class="input-group col">
-                        <label class="input-group-text" for="selecionarDia">Dia</label>
-                        <select class="form-select" id="selecionarDia">
-                            <option value="1">Segunda</option>
-                            <option value="2">Terça</option>
-                            <option value="2">Quarta</option>
-                            <option value="2">Quinta</option>
-                        </select>
-                    </div>
-                    <span class="col-auto">
-                        <button class="btn btn-outline-primary">Aplicar</button>
-                    </span>
-                </div> ----------------------------------------USAR NA FREQUENCIA-->
-
                 <div class="row">
                     <div class="col">
                         <div class="mb-2">
@@ -114,7 +101,7 @@
                                     <th scope="col">Qtd</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            
                                 <tr>
                                     <th scope="row">Angelina Vieira</th>
                                     <td>05/03</td>
@@ -134,85 +121,56 @@
 
 
 
-
                 <table class="table table-hover m-2">
-                        <h3 id="id-notas">Notas</h3>
+                        <h3 id="id-notas">Notas por bimestre</h3>
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th scope="col">Aluno</th>
-                                    <th scope="col">N1</th>
-                                    <th scope="col">N2</th>
-                                    <th scope="col">N3</th>
-                                    <th scope="col">N4</th>
-                                    <th scope="col">Média</th>
+                                    <th scope="col">1º</th>
+                                    <th scope="col">2º</th>
+                                    <th scope="col">3º</th>
+                                    <th scope="col">4º</th>
+                                    <th scope="col">5º</th>
+                                    <th scope="col">Média Final</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Angelina Vieira</th>
-                                    <td>7.3</td>
-                                    <td>8.2</td>
-                                    <td>n/a</td>
-                                    <td>n/a</td>
-                                    <td>7.7</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th scope="row">Média geral</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>7.7</td>
-                                </tr>
-                            </tfoot>
+                            <tbody id="notaAlunos"></tbody>
                         </table>  
                      
-                        <br></br>
+                <br></br>
                         
                 <table class="table table-hover m-2">
                     <h3 id="id-provas">Provas detalhadas</h3>
                     <thead>
                         <tr>
                             <th scope="col">Nome</th>
-                            <th scope="col">N1</th>
-                            <th scope="col">N2</th>
-                            <th scope="col">N3</th>
-                            <th scope="col">N4</th>
-                            <th scope="col">Média</th>
-                            <th scope="col">Filtrar</th>
-                        </tr>
+                            <th scope="col">1º</th>
+                                <th scope="col">2º</th>
+                                <th scope="col">3º</th>
+                                <th scope="col">4º</th>
+                                <th scope="col">5º</th>
+                                <th scope="col">Média Final</th>
+                            </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="provaAlunos"></tbody>
                         <tr>
-                            <th scope="row">Angelina Vieira</th>
-                            <td>7.3</td>
-                            <td>8.2</td>
-                            <td>n/a</td>
-                            <td>n/a</td>
-                            <td>7.7</td>
-                            <td>
-                                <div class="row">
-                                    <div class="input-group col">
-                                        <label class="input-group-text" for="selecionarProva">Selecionar prova</label>
-                                        <select class="form-select" id="selecionarProva">
-                                            <option value="n1">N1</option>
-                                            <option value="n2">N2</option>
-                                            <option value="n3">N3</option>
-                                            <option value="n4">N4</option>
-                                        </select>
-                                    </div>       
+                            <div class="row">
+                                <div class="input-group col">
+                                    <label class="input-group-text" for="selecionarProva">Selecionar prova</label>
+                                    <select class="form-select" id="selecionarProva">
+                                        <option value="n1">1º</option>
+                                        <option value="n2">2º</option>
+                                        <option value="n3">3º</option>
+                                        <option value="n4">4º</option>
+                                    </select>
+                                </div>       
                             </td>
                         </tr>
-                        </tbody>
+            
                         </table>
 
                         <br></br>
-
-
-
 
                         <table class="table table-hover m-2">
                             <h3 id="id-frequencia">Frequência</h3>
@@ -225,15 +183,10 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">Angelina Vieira</th>
-                                    <td>2</td>
+                                    <td>1</td>
                                 </tr>
-
-
-
-
+                        </div>
             </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>

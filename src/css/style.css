@@ -133,6 +133,11 @@ span > .material-icons {
 }
 
 /*-------PAIS-------*/
+
+
+#calendario{
+  background: var(--pais-dark);
+}
 .pais-active, .pais-active:hover {
   background-color: var(--pais-dark);
   color: var(--white);
