@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/cadastrar.js"></script>
     </script>
 </head>
 
@@ -32,22 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto pt-1 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"></a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="mb-3 me-3 btn btn-outline-light nav-link" id="btnAlunos">Alunos</button>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <button class="mb-3 me-3 btn btn-outline-light nav-link" id="btnAtividades">Atividades</button>
-                    </li> -->
-                    <li class="nav-item">
-                        <button class="mb-3 me-3 btn btn-outline-light nav-link" id="btnFrequencia">Frequência</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="mb-3 me-3 btn btn-outline-light nav-link" id="btnNotas">Notas</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="mb-3 me-3 btn btn-outline-light nav-link" onclick="window.location.href='cadastrar_aluno.html'">Cadastrar Aluno</button>
+                        <button class="mb-3 me-3 btn btn-outline-light nav-link" onclick="window.location.href='index.html'">Voltar</button>
                     </li>
                 </ul>
             </div>
@@ -57,11 +42,29 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <main>
+                <form class="mt-3" id="formulario">
+                    <h1>Cadastrar novo aluno</h1>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Nome</span>
+                        <input type="text" class="form-control" name="nome" id="nome" aria-label="Nome do aluno" aria-describedby="nome">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Nome do responsável</span>
+                        <input type="text" class="form-control" name="responsavel" id="responsavel" aria-label="Nome do aluno" aria-describedby="responsavel">
+                    </div>
                     
-                </main>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Turma</span>
+                        <input type="text" class="form-control" name="turma" id="turma" aria-label="Nome do aluno" aria-describedby="turma">
+                    </div>
+
+                    <button class="btn btn-outline-success" type="submit">Criar</button>
+                </form>
             </div>
         </div>
+    </div>
 </body>
 
 </html>
