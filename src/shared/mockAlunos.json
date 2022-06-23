@@ -37,8 +37,8 @@
         }
       ],
       "atividades": [
-        { "nomeAtividade": "Fotografia" },
-        { "nomeAtividade": "Francês" }
+        { "nomeAtividade": "Fotografia", "valor": 80 },
+        { "nomeAtividade": "Francês", "valor": 130 }
       ]
     },
     {
@@ -78,8 +78,8 @@
         }
       ],
       "atividades": [
-        { "nomeAtividade": "Fotografia" },
-        { "nomeAtividade": "Francês" }
+        { "nomeAtividade": "Basquete", "valor": 90 },
+        { "nomeAtividade": "Espanhol", "valor": 100 }
       ]
     }
   ]
