@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="/node_modules/bootstrap/dist/css/bootstrap.css"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -19,7 +19,8 @@
       src="https://www.gstatic.com/charts/loader.js"
     ></script>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/scriptDetalhes.js"></script>
   </head>
 
   <body>
@@ -43,34 +44,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto pt-1 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html"
-              ></a>
-            </li>
-            <li class="mb-3 me-3 btn btn-outline-light nav-item">
-              <a class="nav-link" id="btnListaAlunos"> Lista de Alunos </a>
-            </li>
-            <li class="mb-3 me-3 btn btn-outline-light nav-item">
-              <a class="nav-link" id="btnRelatorios"> Notas </a>
-            </li>
-            <li class="mb-3 me-3 btn btn-outline-light nav-item">
-              <a class="nav-link" id="btnDisciplinas"> Disciplinas </a>
-            </li>
-            <li class="mb-3 me-3 btn btn-outline-light nav-item">
-              <a class="nav-link" id="btnAtividades"> Atividades extras </a>
-            </li>
-            <li class="mb-3 me-3 btn btn-outline-light nav-item">
-              <a class="nav-link" id="btnChat"> Chat </a>
+            <li class="nav-item mb-3 me-3 btn btn-outline-light">
+              <a class="nav-link" id="btnVoltar"> Home </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container pt-2 px-5 pb-5">
       <main id="main"></main>
     </div>
   </body>

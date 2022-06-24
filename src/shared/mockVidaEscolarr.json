@@ -61,6 +61,13 @@
       "atividadesIng": [
         { "nomeAtividade": "Listen, Read, Writer" },
         { "nomeAtividade": "Speak" }
+      ],
+
+      "agenda":[
+        { "diaAtividade": "Segunda" },
+        { "diaAtividade": "Terça" },
+        { "diaAtividade": "Sexta" },
+        { "diaAtividade": "Quinta" }
       ]
 
     }

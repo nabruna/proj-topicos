@@ -4,7 +4,8 @@
   "description": "Repositório para o projeto da matéria de Tópicos Especiais.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch ./src/shared/db.js --port 3000"
   },
   "repository": {
     "type": "git",
