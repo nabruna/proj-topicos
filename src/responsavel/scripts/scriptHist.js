@@ -10,6 +10,12 @@ $(document).ready(function () {
             tabela += '<li class="list-group-item">' + v.nomeAtividade + '</li>';
         });
         tabela += '</ul></td>';
+        tabela += '<td><ul class="list-group">';
+
+        $.each(value.agenda, function (k, v) {
+          tabela += '<li class="list-group-item">' + v.diaAtividade + '</li>';
+      });
+      tabela += '</ul></td>';
   
       });
       $("#contHist").append(tabela);
