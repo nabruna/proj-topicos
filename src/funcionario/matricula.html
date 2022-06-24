@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-scola | Secretaria | Consulta</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./scripts/script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-pais">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <span class="align-middle">
+                    <span class="material-icons md-36">
+                        auto_stories
+                    </span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.html">Consulta Atvi. Extras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vidaEscolar.html">Consulta Notas/ Frequencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="financeiro.html">Financeiro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conteudo.html">Conteúdo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactProf.html">Contato</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <button class="btn btn-danger" onclick="window.location.href='../index.html'">Logout</button>
+                </span>
+            </div>
+                
+           
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 side-nav pais-bg">
+                
+                <div class="list-group">
+                    <a href="#id-matricula" class="list-group-item list-group-item-action pais-active" aria-current="true" >
+                        Ano letivo
+                    </a>
+                    <a href="#id-ativ" class="list-group-item list-group-item-action">Atividades extras</a>
+                    <a href="#id-hr" class="list-group-item list-group-item-action">Horarios</a>
+                   
+                </div>
+
+            </div>
+            
+            <div class="col">
+                <div class="row">
+                    <table class="table table-hover m-2">
+                        
+                        <h3 id="id-matricula">Consulta de Atividades</h3>
+                        <br></br>
+                        <thead>
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Ano</th>
+                                <th scope="col">Turma</th>
+                                <th scope="col">Nº matricula</th>
+                                <th scope="col">Filtrar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Bruninha do Grau</th>
+                                <td>4º </td>
+                                <td>D</td>
+                                <td>042289</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="input-group col">
+                                            <label class="input-group-text" for="selecionarProva">Selecionar matricula</label>
+                                            <select class="form-select" id="selecionarProva">
+                                                <option value="n1">2022</option>
+                                                <option value="n2">2021</option>
+                                                <option value="n3">2020</option>
+                                                <option value="n4">2019</option>
+                                            </select>
+                                        </div>       
+                                </td>
+                            </tr>
+                            </tbody>
+                            </table>
+
+                    
+
+                    <div class="col me-2">
+                        <br></br>
+                        <table class="table table-hover">
+                            <h3 id="id-ativ">Atividades extras</h3>
+                            <thead>
+                                <td><b>Atividades Disponíveis</b></td>
+                                <td></td>
+                            </thead>
+                            <tr>
+                                <td>Violão</td>
+                                <td><b>+</b></td>
+                            </tr>
+                
+                            <tr>
+                                <td>Clube de Videogames</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            <tr>
+                                <td>Matemática Avançada</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            <tr>
+                                <td>Física avançada</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Futebol</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            <tr>
+                                <td>Basquete</td>
+                                <td><b>+</b></td>
+                            </tr>
+                            <tr>
+                                <td>Vôlei</td>
+                                <td><b>+</b></td>
+                            </tr>
+
+                            <td>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="inputAtividade" class="form-control"
+                                            placeholder="Digite a atividade desejada">
+                                    </div>
+                                    <div class="col">
+                                        <button id="registrar" class="btn btn-outline-success"
+                                            onclick="cadastrarAtividade()">Registrar</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </table>
+                    </div>
+
+
+                    <div class="col me-2">
+                        <br></br>
+                        <br></br>
+                        <table class="table table-hover">
+                            <thead>
+                                <td><b>Atividades Selecionadas</b></td>
+                                <td></td>
+                            </thead>
+                            <tr>
+                                <td>Fotografia</td>
+                                <td><b>-</b></td>
+                            </tr>
+                            <tr>
+                                <td>Hóquei no Gelo</td>
+                                <td><b>-</b></td>
+                            </tr>
+
+                            <tr>
+                                <td>Música</td>
+                                <td><b>-</b></td>
+                            </tr>
+
+                            <tr>
+                                <td>Teatro</td>
+                                <td><b>-</b></td>
+                            </tr>
+
+                            
+                            
+                            <td>
+                                <ul class="list-group" id="listaAtividades"></ul>
+                            </td>
+
+
+                        </table>
+                    </div>
+                    <span id="avisoCadastroSucesso" style="display: none;">
+                        <div class="alert alert-success d-flex align-items-center" role="alert">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-check-circle-fill flex-shrink-0 me-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>
+                            <div>
+                                <strong>Criança matriculada!</strong>
+                            </div>
+                        </div>
+                    </span>
+                    <span id="avisoCadastroFalha" style="display: none;">
+                        <div class="alert alert-danger d-flex align-items-center" role="alert">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-exclamation-octagon-fill flex-shrink-0 me-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+                            <div>
+                                <strong>Atenção:</strong> Não foi possível matricular o aluno
+                            </div>
+                        </div>
+                    </span>
+                 
+                
+                </div>
+
+                <div class="col mt-2">
+                    <h4 id="id-hr">Hóquei no Gelo</h4>
+                    <ul>
+                        ❄ Sábados, 8h - 12h
+                        <br>
+                        📌 Quadra B, ala par
+                        <br>
+                        🗣 Bernando Campos (bernardo@e-scola.com.br)
+                    </ul>
+                    <br>
+                    <h4>Música</h4>
+                    <ul>
+                        🎵 Terças, 13h - 15h
+                        <br>
+                        📌 Sala 315, ala ímpar
+                        <br>
+                        🗣 Sandra Ramos (sandra.r@e-scola.com.br)
+                    </ul>
+                </div>
+
+        
+
+                
+        
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-scola | Login funcionário</title>
+    <title>E-scola | Login Secretaria</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 
@@ -14,19 +14,19 @@
 <body class="container text-center">
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="Funcionário">Funcionário</li>
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="Responsável">Responsável</li>
         </ol>
     </nav>
 
     <h1 class="mt-5 fw-bold">Login</h1>
-    <p class="text-muted mt-2 mb-5">Faça login para acessar o portal do funcionário</p>
+    <p class="text-muted mt-2 mb-5">Faça login para acessar o portal do responsável</p>
 
     <section class="d-flex justify-content-center py-5">
         <div class="card p-3" style="max-width: 50rem;">
-            <p><img src="../css/img/funcionario.png" class="py-3" style="max-width: 3rem;"></p>
+            <p><img src="../css/img/pais.png" class="py-3" style="max-width: 3rem;"></p>
 
-            <form action="./inicio.html" class="mx-3">
+            <form action="vidaEscolar.html" class="mx-3">
                 <div class="row mb-3 mx-3">
                     <label for="emailProf" class="text-start form-label fw-bold">Email:</label>
                     <input type="email" class="form-control" id="emailProf" placeholder="email@e-scola.com"
@@ -35,8 +35,7 @@
 
                 <div class="row mb-3 mx-3">
                     <label for="senhaProf" class="text-start form-label fw-bold">Senha:</label>
-                    <input type="password" class="form-control" id="senhaProf" placeholder="**********"
-                        aria-label="insira sua senha">
+                    <input type="password" class="form-control" id="senhaProf" placeholder="**********" aria-label="insira sua senha">
                 </div>
 
                 <button type="submit" class="btn btn-outline-success my-4">Entrar</button>

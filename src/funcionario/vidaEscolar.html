@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-scola | Responsáveis | Vida escolar </title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="./scripts/scriptVidaEscolar.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-pais">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <span class="align-middle">
+                    <span class="material-icons md-36">
+                        auto_stories
+                    </span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.html">Consulta Atvi. Extras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vidaEscolar.html">Consulta Notas/ Frequencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="financeiro.html">Financeiro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conteudo.html">Conteúdo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactProf.html">Contato</a>
+                    </li>
+                </ul>
+                
+                <span class="navbar-text">
+                    <button class="btn btn-danger" onclick="window.location.href='../index.html'">Logout</button>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 side-nav pais-bg">
+                <h2>Vida Escolar</h2>
+                <div class="list-group">
+                    <a href="#id-notas" class="list-group-item list-group-item-action pais-active" aria-current="true" >
+                        Notas
+                    </a>
+                    <a href="#id-provas" class="list-group-item list-group-item-action">Provas</a>
+                    <a href="#id-frequencia" class="list-group-item list-group-item-action">Frequência</a>
+                </div>
+            </div>
+
+            
+
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-2">
+                            <h3 class="ps-2">Consulta</h3>
+                            <hr>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                        Bruninha do Grau
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h3>Presenças</h3>
+                        <hr>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Aluno</th>
+                                    <th scope="col">Datas das faltas</th>
+                                    <th scope="col">Qtd</th>
+                                </tr>
+                            </thead>
+                            
+                                <tr>
+                                    <th scope="row">Bruninha do Grau</th>
+                                    <td>05/03</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">Total</th>
+                                    <td></td>
+                                    <td>1</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+
+
+                <table class="table table-hover m-2">
+                        <h3 id="id-notas">Notas por bimestre</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Aluno</th>
+                                    <th scope="col">1º</th>
+                                    <th scope="col">2º</th>
+                                    <th scope="col">3º</th>
+                                    <th scope="col">4º</th>
+                                    <th scope="col">5º</th>
+                                    <th scope="col">Média Final</th>
+                                </tr>
+                            </thead>
+                            <tbody id="notaAlunos"></tbody>
+                        </table>  
+                     
+                <br></br>
+                        
+                <table class="table table-hover m-2">
+                    <h3 id="id-provas">Provas detalhadas</h3>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">1º</th>
+                                <th scope="col">2º</th>
+                                <th scope="col">3º</th>
+                                <th scope="col">4º</th>
+                                <th scope="col">5º</th>
+                                <th scope="col">Média Final</th>
+                            </tr>
+                    </thead>
+                    <tbody id="provaAlunos"></tbody>
+                        <tr>
+                            <div class="row">
+                                <div class="input-group col">
+                                    <label class="input-group-text" for="selecionarProva">Selecionar prova</label>
+                                    <select class="form-select" id="selecionarProva">
+                                        <option value="n1">1º</option>
+                                        <option value="n2">2º</option>
+                                        <option value="n3">3º</option>
+                                        <option value="n4">4º</option>
+                                    </select>
+                                </div>       
+                            </td>
+                        </tr>
+            
+                        </table>
+
+                        <br></br>
+
+                        <table class="table table-hover m-2">
+                            <h3 id="id-frequencia">Frequência</h3>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Faltas atuais</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Bruninha do Grau</th>
+                                    <td>1</td>
+                                </tr>
+                        </div>
+            </div>
+        </div>
+    </body>
+</html>

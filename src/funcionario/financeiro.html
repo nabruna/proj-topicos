@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-scola</title>
+    <title>E-scola | Responsáveis | Financeiro
+    </title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="./scripts/scriptFinan.js"></script>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light nav-func">
+    <nav class="navbar navbar-expand-lg navbar-light nav-pais">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
                 <span class="align-middle">
                     <span class="material-icons md-36">
                         auto_stories
@@ -23,7 +28,7 @@
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> 
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -31,163 +36,116 @@
                         <a class="nav-link active" aria-current="page" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="inicio.html">Inicio</a>
+                        <a class="nav-link" href="matricula.html">Consulta Atvi. Extras</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="relatorios.html">Relatorios</a>
+                        <a class="nav-link" href="vidaEscolar.html">Consulta Notas/ Frequencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aprovacoes.html">Aprovações</a>
+                        <a class="nav-link" href="financeiro.html">Financeiro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="financeiro.html">Parte Financeira</a>
+                        <a class="nav-link" href="conteudo.html">Conteúdo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="chat.html">Chat</a>
+                        <a class="nav-link" href="contactProf.html">Contato</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    <button class="btn btn-danger" onclick="window.location.href='../index.html'">Logout</button>
+                    <button class="btn btn-danger" onclick="saida(this)" href='../index.html'>Logout</button>
                 </span>
             </div>
+                
+           
         </div>
     </nav>
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 side-nav func-bg">
-              <h2>Financeiro</h2>
-        
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action func-active" aria-current="true">Alunos</a>
-                </div>
-
-            </div>
+            
+            
             <div class="col">
                 <div class="row">
-                    <div class="col-4">
-                        <div class="mb-2">
-                            <h3 class="ps-2">Selecionar aluno</h3>
-                            <hr>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input me-1" type="radio" value="1" checked>
-                                        Alice Ventura
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input me-1" type="radio" value="2">
-                                        Anita Rocha
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input me-1" type="radio" value="3">
-                                        Gustavo Oliveira
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input me-1" type="radio" value="4">
-                                        Diana Armando
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input me-1" type="radio" value="5">
-                                        Leonel Santos
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input me-1" type="radio" value="6">
-                                        Luísa Pinto
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input me-1" type="radio" value="7">
-                                        Maya Pinheiro
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input me-1" type="radio" value="8">
-                                        Manuela Nunes
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input me-1" type="radio" value="9">
-                                        Marcelo Madeira
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input me-1" type="radio" value="10">
-                                        Pedro Soares
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input me-1" type="radio" value="11">
-                                        Santiago Franco
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="form-check">
-                                        <input class="form-check-input me-1" type="radio" value="12">
-                                        Victor Esteves
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="text-end">
-                            <a href="#" class="link-primary">Limpar todos</a>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <h3>Matrícula em atividades Extras</h3>
-                        <hr>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Aluno</th>
-                                    <th scope="col">Data da matrícula</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Valor</th>
-                                    <th scope="col">Atividade</th>
-                                    
-                                    
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Alice Ventura</th>
-                                    <td>11/001</td>
-                                    <td>Cursando</td>
-                                    <td>312,00 R$</td>
-                                    <th>Música</th>
-                                </tr>
-                             </tbody>
-                              
-                        </table>
-
+                    <table class="table table-hover m-2">
                         
-                        <form action="">
-                                       
-                            <button type="submit" class="btn btn-outline-primary" value="exportarMatricula">Exportar Matrícula</button>
-                          </form>
-                        
+                        <h3 id="id-matricula">Selecione o mês e ano da fatura</h3>
+                        <br></br>
+                        <thead>
+                            <tr>
+                                <th scope="col">Aluno</th>
+                                <th scope="col">Nº matricula</th>
+                                <th scope="col">Valor Mensal</th>
+        
+                            </tr>
+                        </thead>
+                        <tbody id="finan"></tbody>
+                            <tr>
+                                
+                                <td>
+                                    <div class="row mb-10 mx-5">
+                                        <div class="input-group col">
+                                            <label class="input-group-text" for="selecionarProva">Selecionar mês</label>
+                                            <select class="form-select" id="selecionarProva">
+                                                <option value="n1">janeiro</option>
+                                                <option value="n2">fevereiro</option>
+                                                <option value="n3">março</option>
+                                                <option value="n4">abril</option>
+                                                <option value="n2">maio</option>
+                                                <option value="n3">junho</option>
+                                                <option value="n4">julho</option>
+                                                <option value="n2">agosto</option>
+                                                <option value="n3">setembro</option>
+                                                <option value="n4">outubro</option>
+                                            </select>
+                                        </div>  
+                                        <div class="input-group col">
+                                            <label class="input-group-text" for="selecionarProva">Selecionar ano</label>
+                                            <select class="form-select" id="selecionarProva">
+                                                <option value="n1">2022</option>
+                                                <option value="n2">2021</option>
+                                                <option value="n3">2020</option>
+                                                <option value="n4">2019</option>
+                                            </select>
+                                        </div>       
+                                </td>
+                            </tr>
+                            </tbody>
+                            </table>
+
+
+                            <section class="justify-content-center py-5" style="max-width: 100%">
+                                <h3 id="id-ativ">Consulta</h3>
+                                
+                                <div class="row mb-3 mx-3">
+                    
+                                <label for="cpf" class="text-start form-label fw-bold">Consulte o CPF desejado:</label>
+                                    <input type="number"  class="form-control" placeholder="apenas números"
+                                        aria-label="insira seu CPF" pattern="[0-9]+$">
+                                        <button type="submit" class="btn btn-outline-success my-4" onclick="validarCPF()">Confirmar</button>
+                                </div>
+                                
+                                <h4>Escolha o metodo para envio da fatura</h4>
+                                <div class="row mb-3 mx-3">
+
+                                    <label for="emailProf" class="text-start form-label fw-bold">Email:</label>
+                                    <input type="email" class="form-control" id="emailProf" placeholder="email@e-scola.com"
+                                        aria-label="insira seu e-mail">
+                                        <button type="submit" class="btn btn-outline-success my-4" onclick="alertaFunc()">Enviar</button>
+                                
+                                    <label for="emailProf" class="text-start form-label fw-bold">Celular:</label>
+                                    <input type="tel" class="form-control" id="emailProf" placeholder="(41)9****-****"
+                                        aria-label="insira seu número">
+                                        <button type="submit" class="btn btn-outline-success my-4" onclick="alertaFunc()">Enviar</button>
+                                </div>
+                            </section>   
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
 
+    
+
+</body>
 </html>
