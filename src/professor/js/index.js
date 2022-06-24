@@ -1,162 +1,148 @@
-window.onload = () => {
-  var main = document.getElementsByTagName("main")[0];
-  var btnAlunos = document.getElementById("btnAlunos");
-  var btnFrequencia = document.getElementById("btnFrequencia");
+$(document).ready(function () {
+  $("#btnRelatorios").click(function () {
+    $.getJSON("../shared/mockAlunos.json", function (data) {
+      var relatorios = "";
+      var header = "";
+      header += `
+      <h1>Notas</h1>`;
+      relatorios += `
+      <table class="table">
+      <thead>
+      <th>Nome</th>
+      <th>Faltas</th>
+      <th>Nota 1</th>
+      <th>Nota 2</th>
+      <th>Nota 3</th>
+      <th>Nota 4</th>
+      <th>Média</th>
+      <th>Status</th>      
+      </thead>
+      <tbody>`;
+      $.each(data.alunos, function (i, aluno) {
+        const matematica = aluno.materias[1];
+        var aprovacao = "";
 
-  function gerarTabela(url) {
-    main.innerHTML = "<h1 class='my-2 fw-bold'>Alunos</h1>";
+        media =
+          (matematica.notas[0] +
+            matematica.notas[1] +
+            matematica.notas[2] +
+            matematica.notas[3]) /
+          4;
 
-    fetch(url)
-      .then((resposta) => {
-        return resposta.json();
-      })
-      .then((alunos) => {
-        listaDealunos = alunos;
-
-        //Código de geração da tabela
-        var table = document.createElement("table");
-        table.classList.add("table");
-
-        var thead = document.createElement("thead");
-        thead.innerHTML =
-          "<tr><th>Nome</th><th>Turma</th><th>Matérias</th><th>Atividades extras</th><th>Responsável</th></tr>";
-        table.appendChild(thead);
-
-        var tbody = document.createElement("tbody");
-
-        var linhasTabela = alunos.length;
-
-        for (var i = 0; i < linhasTabela; i++) {
-          var tr = document.createElement("tr");
-          var aluno = alunos[i];
-
-          //Mostrar nome do aluno
-          var td = document.createElement("td");
-          var txt = document.createTextNode(aluno.nome);
-          td.appendChild(txt);
-          tr.appendChild(td);
-
-          //Mostrar turma
-          var td = document.createElement("td");
-          var txt = document.createTextNode(aluno.turma);
-          td.appendChild(txt);
-          tr.appendChild(td);
-
-          //Mostrar lista de matérias
-          var td = document.createElement("td");
-          const listaMaterias = document.createElement("ul");
-          listaMaterias.classList.add("list-group");
-          for (let i = 0; i < aluno.materias.length; i++) {
-            const itemMateria = document.createElement("li");
-            itemMateria.classList.add("list-group-item");
-            var txt = document.createTextNode(aluno.materias[i].nomeMateria);
-            itemMateria.appendChild(txt);
-            listaMaterias.appendChild(itemMateria);
-            td.appendChild(listaMaterias);
-            tr.appendChild(td);
-          }
-
-          //Mostrar lista de atividades extras
-          var td = document.createElement("td");
-          const listaAtividades = document.createElement("ul");
-          listaAtividades.classList.add("list-group");
-          for (let i = 0; i < aluno.atividades.length; i++) {
-            const itemAtividade = document.createElement("li");
-            itemAtividade.classList.add("list-group-item");
-            var txt = document.createTextNode(
-              aluno.atividades[i].nomeAtividade
-            );
-            itemAtividade.appendChild(txt);
-            listaAtividades.appendChild(itemAtividade);
-            td.appendChild(listaAtividades);
-            tr.appendChild(td);
-          }
-
-          //Mostrar responsável
-          var td = document.createElement("td");
-          var txt = document.createTextNode(aluno.responsavel);
-          td.appendChild(txt);
-          tr.appendChild(td);
-
-          tr.appendChild(td);
-          tbody.appendChild(tr);
+        if (media < 4) {
+          aprovacao = "<span class='text-danger fw-bold'>Reprovado</span>";
+        } else if (media < 7) {
+          aprovacao =
+            "<span class='text-warning fw-bold'>Em recuperação</span>";
+        } else {
+          aprovacao = "<span class='text-success fw-bold'>Aprovado</span>";
         }
 
-        table.appendChild(tbody);
-
-        main.appendChild(table);
+        relatorios += `
+        <tr>
+        <td>${aluno.nome}</td>
+        <td>${matematica.faltas}</td>
+        <td>${matematica.notas[0]}</td>
+        <td>${matematica.notas[1]}</td>
+        <td>${matematica.notas[2]}</td>
+        <td>${matematica.notas[3]}</td>
+        <td>${media.toFixed(1)}</td>
+        <td>${aprovacao}</td>`;
       });
-  }
+      relatorios += `
+      </tbody>
+      </table>`;
+      content = header + relatorios;
+      $("#main").html(content);
+    });
+  });
 
-  btnAlunos.onclick = () => {
-    main.innerHTML = "";
-    gerarTabela("http://localhost:3000/alunos");
-  };
+  $("#btnDisciplinas").click(function () {
+    $.getJSON("../shared/mockMaterias.json", function (data) {
+      var disciplinas = "";
+      var header = "";
+      header += `
+      <h1>Disciplinas</h1>`;
+      disciplinas += `
+      <table class="table">
+      <thead>
+      <th>Disciplina</th>
+      <th>Professor</th>
+      <th>Lista de alunos</th>      
+      </thead>
+      <tbody>`;
 
-  function gerarFreq(url) {
-    main.innerHTML = "<h1 class='my-2 fw-bold'>Frequência</h1>";
-
-    fetch(url)
-      .then((resposta) => {
-        return resposta.json();
-      })
-      .then((alunos) => {
-        listaDealunos = alunos;
-
-        //Código de geração da tabela
-        var table = document.createElement("table");
-        table.classList.add("table");
-
-        var thead = document.createElement("thead");
-        thead.innerHTML =
-          "<tr><th>Nome</th><th>Faltas</th></tr>";
-        table.appendChild(thead);
-
-        var tbody = document.createElement("tbody");
-
-        var linhasTabela = alunos.length;
-
-        for (var i = 0; i < linhasTabela; i++) {
-            var tr = document.createElement("tr");
-            var aluno = alunos[i];
-  
-            //Mostrar nome do aluno
-            var td = document.createElement("td");
-            var txt = document.createTextNode(aluno.nome);
-            td.appendChild(txt);
-            tr.appendChild(td);
-  
-            //Mostrar lista de matérias
-            var td = document.createElement("td");
-            const listaMaterias = document.createElement("ul");
-            listaMaterias.classList.add("list-group");
-            for (let i = 0; i < aluno.materias.length; i++) {
-              const itemMateria = document.createElement("li");
-              itemMateria.classList.add("list-group-item");
-              var txt = document.createTextNode(aluno.materias[i].nomeMateria);
-              itemMateria.appendChild(txt);
-              var sp = document.createTextNode(": ");
-              itemMateria.appendChild(sp);
-              var num = document.createTextNode(aluno.materias[i].faltas);
-              itemMateria.appendChild(num);
-              listaMaterias.appendChild(itemMateria);
-              td.appendChild(listaMaterias);
-              tr.appendChild(td);
-            }
-  
-            tr.appendChild(td);
-            tbody.appendChild(tr);
-          }
-
-        table.appendChild(tbody);
-
-        main.appendChild(table);
+      $.each(data.materias, function (i, materia) {
+        disciplinas += `
+        <tr>
+        <td>${materia.materia}</td>
+        <td>${materia.professor}</td>
+        <td><a href="../professor/html/listaAlunos.html?id=${materia.id}">Gerar lista</a></td>
+        </tr>
+        `;
       });
-  }
+      disciplinas += `
+      </tbody>
+      </table>`;
+      content = header + disciplinas;
+      $("#main").html(content);
+    });
+  });
 
-  btnFrequencia.onclick = () => {
-    main.innerHTML = "";
-    gerarFreq("http://localhost:3000/alunos");
-  };
-  
-};
+  $("#btnAtividades").click(function () {
+    $.getJSON("../shared/mockAtividades.json", function (data) {
+      var atividades = "";
+      var header = "";
+      header += `
+      <h1>Atividades extras</h1>`;
+      atividades += `
+      <table class="table">
+      <thead>
+      <th>Atividade</th>
+      <th>Dia</th>
+      <th>Horário</th>
+      <th>Local</th>
+      <th>Valor</th>      
+      </thead>
+      <tbody>`;
+
+      $.each(data.atividades, function (i, atividade) {
+        atividades += `
+        <tr>
+        <td>${atividade.nome}</td>
+        <td>${atividade.dia}</td>
+        <td>${atividade.horario}</td>
+        <td>${atividade.local}</td>
+        <td>${atividade.valor}</td>
+        </tr>
+        `;
+      });
+      atividades += `
+      </tbody>
+      </table>`;
+      content = header + atividades;
+      $("#main").html(content);
+    });
+  });
+
+  $("#btnListaAlunos").click(function () {
+    $.getJSON("../shared/mockAlunos.json", function (data) {
+      var listaAlunosCompleta = "";
+      var header = "";
+      header += `
+      <h1>Lista de alunos</h1>`;
+      listaAlunosCompleta += `
+      <div class="list-group">`;
+
+      $.each(data.alunos, function (i, aluno) {
+        listaAlunosCompleta += `
+        <a href="../professor/html/detalhes.html?id=${aluno.id}" class="list-group-item list-group-item-action">${aluno.nome}</a>
+        `;
+      });
+      listaAlunosCompleta += `
+      </div>`;
+      content = header + listaAlunosCompleta;
+      $("#main").html(content);
+    });
+  });
+});

@@ -1,20 +1,24 @@
-[
-  {
-    "materia": "Biologia",
-    "professor": "NOME SOBRENOME",
-    "dia": "Segunda-feira",
-    "alunos": ["NOME SOBRENOME", "NOME SOBRENOME"]
-  },
-  {
-    "materia": "Matemática",
-    "professor": "NOME SOBRENOME",
-    "dia": "Terça-feira",
-    "alunos": ["NOME SOBRENOME", "NOME SOBRENOME"]
-  },
-  {
-    "materia": "Português",
-    "professor": "NOME SOBRENOME",
-    "dia": "Quarta-feira",
-    "alunos": ["NOME SOBRENOME", "NOME SOBRENOME"]
-  }
-]
+{
+  "materias": [
+    {
+      "id": 1,
+      "materia": "Biologia",
+      "professor": "Geraldo Vanucci",
+      "alunos": ["Alice Ventura", "Alex Campos"]
+    },
+
+    {
+      "id": 2,
+      "materia": "Matemática",
+      "professor": "Carla Costa",
+      "alunos": ["Alice Ventura", "Alex Campos"]
+    },
+    
+    {
+      "id": 3,
+      "materia": "Português",
+      "professor": "Helena Sinval",
+      "alunos": ["Alice Ventura", "Alex Campos"]
+    }
+  ]
+}

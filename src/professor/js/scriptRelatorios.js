@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  $("#test").hide()
+
   $.getJSON("../shared/mockAlunos.json", function (data) {
     var relatorios = "";
     $.each(data.alunos, function (i, value) {
